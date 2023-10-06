@@ -5,7 +5,7 @@ import construccionCard from "../Assets/construccionCard.png";
 
 export default function Services() {
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col items-center '>
       <h1 className='text-2xl font-bold mb-6'>Nuestros servicios</h1>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
         <div className='relative bg-white rounded-lg p-6 text-center shadow-md'>
@@ -36,7 +36,7 @@ export default function Services() {
           <h3 className='text-xl font-semibold mb-2'>
             CONSTRUCCIONES EN GENERAL
           </h3>
-         {/*  <p className='text-gray-600'>
+          {/*  <p className='text-gray-600'>
             Civiles, electromecánicas
             <br /> Arquitectura industrial e ingeniería para Diseño y proyectos
             de obra Civil y electromecánica.
@@ -61,7 +61,7 @@ export default function Services() {
           <h3 className='text-xl font-semibold mb-2'>
             MANTENIMIENTO INDUSTRIAL
           </h3>
-         {/*  <p className='text-gray-600'>
+          {/*  <p className='text-gray-600'>
             Mantenimiento eléctrico y mecánico in-situ, o en taller.
             <br />
             Automatización. Mantenimiento Edilicio - <br />

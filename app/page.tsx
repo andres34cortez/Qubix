@@ -1,18 +1,21 @@
 import React from "react";
-import './globals.css';
+import "./globals.css";
 import Services from "./Components/Services";
 import Section from "./Components/Section";
 import Carousel from "./Components/CarouselImg";
+import Navbar from "./Components/NavBar";
 export default function Home() {
   return (
     <div>
-      {/* contenedor general */}
+      <Navbar />
 
-      <div className='bg-black flex flex-row'>
+      <div className=' flex flex-row pt-20'>
         <div className='text-white'>aca va e texto full facha a</div>
         <Carousel />
       </div>
-      <Services />
+      <div id='Services'>
+        <Services />
+      </div>
       <Section title=' VENTA DE PRODUCTOS E INSUMOS' variant='Productos'>
         Ventas de insumos de ferretería industrial.
         <br />
@@ -31,8 +34,8 @@ export default function Home() {
       </Section>
       <Section title=' MANTENIMIENTO INDUSTRIAL' variant='Mantenimiento'>
         Mantenimiento eléctrico y mecánico in-situ, o en taller. <br />
-        Automatización. Mantenimiento Edilicio.  <br />
-        Redes de incendio y sistema de detección.  <br />
+        Automatización. Mantenimiento Edilicio. <br />
+        Redes de incendio y sistema de detección. <br />
         Servicio integral mecánico para minería y empresas constructoras.
       </Section>
     </div>
