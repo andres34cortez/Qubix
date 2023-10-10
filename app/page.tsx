@@ -6,12 +6,15 @@ import Carousel from "./Components/CarouselImg";
 import Navbar from "./Components/NavBar";
 import Marquee from "./Components/Marquee";
 import { ContactForm } from "./Components/Form";
+import Us from "./Components/Us";
 export default function Home() {
   return (
     <div className="flex flex-col">
       <Navbar />
       <div className="pt-[75px]" />
-      <div className="flex items-center justify-center">QUIENES SOMOS</div>
+      <div className="flex items-center flex-col justify-center">QUIENES SOMOS
+      <Us/>
+      </div>
       <Marquee />
       <div id="Services" className="mt-16 flex flex-col items-center w-full">
         <Section title=" VENTA DE PRODUCTOS E INSUMOS" variant="Productos">
