@@ -1,0 +1,20 @@
+ <svg
+  width="400"
+  height="400"
+  viewBox="0 0 80 80"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+ >
+  <g clip-path="url(#clip0_1_2)">
+    {/* AZUL */}
+    <path
+      d="M30.32 0.770002L4.12 10.46L26.76 20.53C29.1583 21.6051 31.7568 22.1609 34.385 22.1609C37.0132 22.1609 39.6117 21.6051 42.01 20.53L66 9.74L38.51 0.630002C35.8441 -0.259615 32.954 -0.210212 30.32 0.770002Z"
+      fill="#0892A8"
+    />
+  </g>
+  <defs>
+    <clipPath id="clip0_1_2">
+      <rect width="207.92" height="73.76" fill="white" />
+    </clipPath>
+  </defs>
+</svg>

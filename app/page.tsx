@@ -6,11 +6,13 @@ import Carousel from "./Components/CarouselImg";
 import Navbar from "./Components/NavBar";
 import Marquee from "./Components/Marquee";
 import { ContactForm } from "./Components/Form";
+import Qubix from "./Components/Qubix";
 export default function Home() {
   return (
     <div className="flex flex-col">
       <Navbar />
       <div className="pt-[75px]" />
+      <Qubix />
       <div className="flex items-center justify-center">QUIENES SOMOS</div>
       <Marquee />
       <div id="Services" className="mt-16 flex flex-col items-center w-full">
