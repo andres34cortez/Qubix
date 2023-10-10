@@ -17,7 +17,7 @@ interface Props {
 
 const Section = (props: Props) => {
   return (
-    <div className="flex relative w-full items-center justify-center bg-gray-100 h-screen">
+    <div className="flex relative w-full items-center justify-center bg-gray-100 h-screen z-[-2]">
       <div className="max-w-[1400px]">
         <div className="container flex flex-row">
           <Image
@@ -30,12 +30,12 @@ const Section = (props: Props) => {
             }
             alt=""
             className={cn(
-              "w-[400px] absolute top-0 ",
+              "w-[400px] absolute top-0 z-[-1]",
               props.variant === "Construccion" &&
-                " right-0 border-[#ff6a14] scale-y-[-1]",
+                " right-0 border-[#ff6a14] scale-y-[-1] ",
               props.variant === "Productos" && "left-0",
               props.variant === "Mantenimiento" &&
-                " left-0 border-[#544b54] scale-[-1]"
+                " left-0 border-[#544b54] scale-[-1] "
             )}
           />
           <div

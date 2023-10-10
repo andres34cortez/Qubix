@@ -5,25 +5,28 @@ import Section from "./Components/Section";
 import Carousel from "./Components/CarouselImg";
 import Navbar from "./Components/NavBar";
 import Marquee from "./Components/Marquee";
-
+import Azul from "./Assets/azul.svg";
+import Naranja from "./Assets/naranja.svg";
+import Gris from "./Assets/gris.svg";
 import { ContactForm } from "./Components/Form";
 import Qubix from "./Components/Qubix";
+import Image from "next/image";
 export default function Home() {
   return (
-    <div className="flex flex-col">
+    <div className='flex flex-col'>
       <Navbar />
-      <div className="pt-[75px]" />
+      <div className='pt-[75px]' />
       <Qubix />
-      <div className="flex items-center justify-center">QUIENES SOMOS</div>
+      <div className='flex items-center justify-center'>QUIENES SOMOS</div>
       <Marquee />
-      <div id="Services" className="mt-16 flex flex-col items-center w-full">
-        <Section title=" VENTA DE PRODUCTOS E INSUMOS" variant="Productos">
+      <div id='Services' className='mt-16 flex flex-col items-center w-full'>
+        <Section title=' VENTA DE PRODUCTOS E INSUMOS' variant='Productos'>
           Ventas de insumos de ferretería industrial.
           <br />
           Venta y alquiler de herramientas industriales
         </Section>
-        <div className="mt-20" />
-        <Section title=" CONSTRUCCIONES EN GENERAL" variant="Construccion">
+        <div className='mt-20' />
+        <Section title=' CONSTRUCCIONES EN GENERAL' variant='Construccion'>
           Civiles, electromecánicas.
           <br /> Arquitectura industrial e ingeniería para Diseño y proyectos de
           obra Civil y electromecánica. <br />
@@ -34,19 +37,29 @@ export default function Home() {
           <br /> Construcción Tradicional o Sistemas Alternativos, Steel frame,
           cassaforma y panelizado
         </Section>
-        <div className="mt-20" />
-        <Section title=" MANTENIMIENTO INDUSTRIAL" variant="Mantenimiento">
+        <div className='mt-20' />
+        <Section title=' MANTENIMIENTO INDUSTRIAL' variant='Mantenimiento'>
           Mantenimiento eléctrico y mecánico in-situ, o en taller. <br />
           Automatización. Mantenimiento Edilicio. <br />
           Redes de incendio y sistema de detección. <br />
           Servicio integral mecánico para minería y empresas constructoras.
         </Section>
       </div>
-      <div
-        id="Contact"
-        className="flex flex-col h-[700px] max-w-[1400px] w-full self-center"
-      >
-        <h1 className="text-5xl font-bold my-20">Contactate con nosotros!</h1>
+      <div id='Contact' className='flex flex-col h-[700px]  w-full relative'>
+        <Image src={Azul} alt='' className='w-[400px] absolute top-0 z-[-1]' />
+        <Image
+          src={Naranja}
+          alt=''
+          className='w-[400px] absolute right-0 mr-auto mt-0  z-[-1] scale-y-[-1]'
+        />
+        <Image
+          src={Gris}
+          alt=''
+          className='w-[400px] bottom-0 right-0 absolute ml-auto mb-0  z-[-1]'
+        />
+        <h1 className='text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold my-10 sm:my-20 pl-4 sm:pl-8 md:pl-12 lg:pl-24 underline'>
+          Contactate con nosotros!
+        </h1>
         <ContactForm />
       </div>
     </div>
