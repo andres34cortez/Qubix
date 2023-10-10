@@ -5,7 +5,9 @@ import Section from "./Components/Section";
 import Carousel from "./Components/CarouselImg";
 import Navbar from "./Components/NavBar";
 import Marquee from "./Components/Marquee";
+
 import { ContactForm } from "./Components/Form";
+import Qubix from "./Components/Qubix";
 export default function Home() {
   return (
     <div className="flex flex-col">
