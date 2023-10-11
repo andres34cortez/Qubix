@@ -1,17 +1,32 @@
 "use client";
 
-import Image from "next/image";
-import React from "react";
-import CaraAzul from "../Assets/cara_azul.svg";
-import CaraNaranja from "../Assets/cara_naranja.svg";
-import CaraGris from "../Assets/cara_gris.svg";
+import React, { useRef, useEffect } from "react";
+import lottie from "lottie-web";
 
-export default function Qubix() {
-  return (
-    <div className="h-screen w-full flex items-center justify-center">
-      <Image src={CaraAzul} alt="" className={`absolute`} />
-      <Image src={CaraNaranja} alt="" className={`absolute`} />
-      <Image src={CaraGris} alt="" className={`absolute`} />
-    </div>
-  );
+interface LottieAnimationProps {
+  animationData: any; // Puedes ajustar el tipo según tu archivo JSON de animación.
 }
+
+const LottieAnimation: React.FC<LottieAnimationProps> = ({ animationData }) => {
+  const containerRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (containerRef.current) {
+      const anim = lottie.loadAnimation({
+        container: containerRef.current,
+        renderer: "svg", // Puedes ajustar esto según tus necesidades.
+        loop: false, // Si quieres que la animación se repita.
+        autoplay: true, // Si quieres que la animación se reproduzca automáticamente al cargar la página.
+        animationData, // El archivo JSON de animación importado.
+      });
+
+      return () => {
+        anim.destroy(); // Limpia la animación cuando el componente se desmonta.
+      };
+    }
+  }, [animationData]);
+
+  return <div ref={containerRef} className="flex self-center w-[1000px]" />;
+};
+
+export default LottieAnimation;

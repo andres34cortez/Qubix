@@ -69,11 +69,20 @@ module.exports = {
           "0%": { transform: "translateX(0%)" },
           "100%": { transform: "translateX(-50%)" },
         },
+        widen: {
+          "0%": { width: "355px", animationTimingFunction: "ease-out" },
+          "33%, 98%": { width: "355px", animationTimingFunction: "ease-in" },
+          "40%, 87%": {
+            width: "1000px",
+            animationTimingFunction: "ease-in-out",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         marquee: "marquee 32s linear infinite",
+        widen: "widen 6s",
       },
     },
   },
