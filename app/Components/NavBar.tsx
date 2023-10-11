@@ -42,11 +42,11 @@ export default function Navbar() {
       <Link href='/'>
         <Image src={LogoColor} alt='Logo' className='w-[110px]' />
       </Link>
-      <ul className='flex space-x-6 items-center'>
+      <ul className='flex space-x-6 items-center '>
         <li>
           <h1
             onClick={() => scrollTo("Services")}
-            className='text-[#303030] hover:text-black hover:font-medium duration-300'
+            className='text-[#303030] hover:text-black cursor-pointer hover:font-medium duration-300'
           >
             Servicios
           </h1>
@@ -54,7 +54,7 @@ export default function Navbar() {
         <li>
           <h1
             onClick={() => scrollTo("Contact")}
-            className='text-[#303030] hover:text-black hover:font-medium duration-300'
+            className='text-[#303030] hover:text-black cursor-pointer hover:font-medium duration-300'
           >
             Contacto
           </h1>
