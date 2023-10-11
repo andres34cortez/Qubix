@@ -6,7 +6,6 @@ import Section from "./Components/Section";
 import Carousel from "./Components/CarouselImg";
 import Navbar from "./Components/NavBar";
 import Marquee from "./Components/Marquee";
-import Azul from "./Assets/azul.svg";
 import Naranja from "./Assets/naranja.svg";
 import Gris from "./Assets/gris.svg";
 import { ContactForm } from "./Components/Form";
@@ -28,17 +27,19 @@ export default function Home() {
 
   return (
     <AnimatePresence>
-      <div className="flex flex-col">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.4, delay: 6 }}
-        >
-          <Navbar />
-        </motion.div>
+      <div className="hidden lg:flex lg:flex-col">
+        {isVisible && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.4 }}
+          >
+            <Navbar />
+          </motion.div>
+        )}
         <div className="pt-[65px]" />
         <div
-          className="flex flex-col w-full items-center justify-center"
+          className="hidden lg:flex lg:flex-col lg;w-full lg:items-center lg:justify-center"
           style={{ height: `calc(100vh - 110px)` }}
         >
           <motion.div
@@ -102,77 +103,134 @@ export default function Home() {
             </div>
           </motion.div>
         </div>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.4, delay: 6 }}
-        >
-          <Marquee />
-          {isVisible && (
-            <>
-              <div id="Services" className=" flex flex-col items-center w-full">
-                <Section
-                  title=" VENTA Y ALQUILER DE EQUIPOS E INSUMOS"
-                  variant="Productos"
+        {isVisible && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.4 }}
+          >
+            <Marquee />
+            {isVisible && (
+              <>
+                <div
+                  id="Services"
+                  className=" flex flex-col items-center w-full"
                 >
-                  Ventas de insumos industrial.
-                  <br />
-                  Ventas de insumos para la construcción.
-                  <br />
-                  Venta y alquiler de herramientas.
-                  <br />
-                  Alquiler de equipos para minería/construcción.
-                </Section>
-                <Section
-                  title=" CONSTRUCCIONES EN GENERAL"
-                  variant="Construccion"
+                  <Section
+                    title=" VENTA Y ALQUILER DE EQUIPOS E INSUMOS"
+                    variant="Productos"
+                  >
+                    Ventas de insumos industrial.
+                    <br />
+                    Ventas de insumos para la construcción.
+                    <br />
+                    Venta y alquiler de herramientas.
+                    <br />
+                    Alquiler de equipos para minería/construcción.
+                  </Section>
+                  <Section
+                    title=" CONSTRUCCIONES EN GENERAL"
+                    variant="Construccion"
+                  >
+                    Civiles, electromecánicas.
+                    <br /> Arquitectura industrial e ingeniería para Diseño y
+                    proyectos de obra Civil y electromecánica. <br />
+                    Planificación, gestión y proyectos de obra mediante sistema
+                    BIM.
+                    <br /> Construcciones especiales. Montaje, y soldaduras
+                    especiales. Metalúrgica en general. Módulos estructurales
+                    industriales o de viviendas.
+                    <br /> Construcción Tradicional o Sistemas Alternativos,
+                    Steel frame, cassaforma y panelizado
+                  </Section>
+                  <Section
+                    title=" MANTENIMIENTO INDUSTRIAL"
+                    variant="Mantenimiento"
+                  >
+                    Mantenimiento eléctrico y mecánico in-situ, o en taller.{" "}
+                    <br />
+                    Automatización. Mantenimiento Edilicio. <br />
+                    Redes de incendio y sistema de detección. <br />
+                    Servicio integral mecánico para minería y empresas
+                    constructoras.
+                  </Section>
+                </div>
+                <Marquee />
+                <div
+                  id="Contact"
+                  className="flex flex-col h-[700px] w-full relative"
                 >
-                  Civiles, electromecánicas.
-                  <br /> Arquitectura industrial e ingeniería para Diseño y
-                  proyectos de obra Civil y electromecánica. <br />
-                  Planificación, gestión y proyectos de obra mediante sistema
-                  BIM.
-                  <br /> Construcciones especiales. Montaje, y soldaduras
-                  especiales. Metalúrgica en general. Módulos estructurales
-                  industriales o de viviendas.
-                  <br /> Construcción Tradicional o Sistemas Alternativos, Steel
-                  frame, cassaforma y panelizado
-                </Section>
-                <Section
-                  title=" MANTENIMIENTO INDUSTRIAL"
-                  variant="Mantenimiento"
-                >
-                  Mantenimiento eléctrico y mecánico in-situ, o en taller.{" "}
-                  <br />
-                  Automatización. Mantenimiento Edilicio. <br />
-                  Redes de incendio y sistema de detección. <br />
-                  Servicio integral mecánico para minería y empresas
-                  constructoras.
-                </Section>
-              </div>
-              <Marquee />
-              <div
-                id="Contact"
-                className="flex flex-col h-[700px] w-full relative"
-              >
-                <Image
-                  src={Naranja}
-                  alt=""
-                  className="w-[600px] absolute bottom-0 z-[-1] scale-x-[-1]"
-                />
-                <Image
-                  src={Gris}
-                  alt=""
-                  className="w-[600px] bottom-0 right-0 absolute ml-auto mb-0  z-[-1]"
-                />
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold my-10 sm:my-20 pl-4 sm:pl-8 md:pl-12 lg:pl-24">
-                  Contactate con nosotros!
-                </h1>
-                <ContactForm />
-              </div>
-            </>
-          )}
-        </motion.div>
+                  <Image
+                    src={Naranja}
+                    alt=""
+                    className="w-[600px] absolute bottom-0 z-[-1] scale-x-[-1]"
+                  />
+                  <Image
+                    src={Gris}
+                    alt=""
+                    className="w-[600px] bottom-0 right-0 absolute ml-auto mb-0  z-[-1]"
+                  />
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold my-10 sm:my-20 pl-4 sm:pl-8 md:pl-12 lg:pl-24">
+                    Contactate con nosotros!
+                  </h1>
+                  <ContactForm />
+                </div>
+              </>
+            )}
+          </motion.div>
+        )}
+      </div>
+      {/* MOBILE */}
+      <div className="flex flex-col lg:hidden">
+        <Navbar />
+        <div id="Services" className=" flex flex-col items-center w-full">
+          <Section
+            title=" VENTA Y ALQUILER DE EQUIPOS E INSUMOS"
+            variant="Productos"
+          >
+            Ventas de insumos industrial.
+            <br />
+            Ventas de insumos para la construcción.
+            <br />
+            Venta y alquiler de herramientas.
+            <br />
+            Alquiler de equipos para minería/construcción.
+          </Section>
+          <Section title=" CONSTRUCCIONES EN GENERAL" variant="Construccion">
+            Civiles, electromecánicas.
+            <br /> Arquitectura industrial e ingeniería para Diseño y proyectos
+            de obra Civil y electromecánica. <br />
+            Planificación, gestión y proyectos de obra mediante sistema BIM.
+            <br /> Construcciones especiales. Montaje, y soldaduras especiales.
+            Metalúrgica en general. Módulos estructurales industriales o de
+            viviendas.
+            <br /> Construcción Tradicional o Sistemas Alternativos, Steel
+            frame, cassaforma y panelizado
+          </Section>
+          <Section title=" MANTENIMIENTO INDUSTRIAL" variant="Mantenimiento">
+            Mantenimiento eléctrico y mecánico in-situ, o en taller. <br />
+            Automatización. Mantenimiento Edilicio. <br />
+            Redes de incendio y sistema de detección. <br />
+            Servicio integral mecánico para minería y empresas constructoras.
+          </Section>
+        </div>
+        <Marquee />
+        <div id="Contact" className="flex flex-col h-[700px] w-full relative">
+          <Image
+            src={Naranja}
+            alt=""
+            className="w-[600px] absolute bottom-0 z-[-1] scale-x-[-1]"
+          />
+          <Image
+            src={Gris}
+            alt=""
+            className="w-[600px] bottom-0 right-0 absolute ml-auto mb-0  z-[-1]"
+          />
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold my-10 sm:my-20 pl-4 sm:pl-8 md:pl-12 lg:pl-24">
+            Contactate con nosotros!
+          </h1>
+          <ContactForm />
+        </div>
       </div>
     </AnimatePresence>
   );
