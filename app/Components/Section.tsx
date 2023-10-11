@@ -30,7 +30,7 @@ const Section = (props: Props) => {
             }
             alt=""
             className={cn(
-              "w-[400px] absolute top-0 z-[-1]",
+              "w-[700px] absolute top-0 z-[-1]",
               props.variant === "Construccion" &&
                 " right-0 border-[#ff6a14] scale-y-[-1] ",
               props.variant === "Productos" && "left-0",
@@ -59,7 +59,7 @@ const Section = (props: Props) => {
             </div>
             <div className="lg:w-1/2 h-full w-full flex flex-col justify-center">
               <h2
-                className={`text-3xl font-bold mb-4 ${
+                className={`text-3xl font-semibold mb-4 ${
                   props.variant === "Construccion" ? "pl-16" : ""
                 }`}
               >
@@ -73,7 +73,11 @@ const Section = (props: Props) => {
                   props.variant === "Construccion" && "bg-[#ff6a14]"
                 )}
               />
-              <p className={props.variant === "Construccion" ? "pl-16" : ""}>
+              <p
+                className={
+                  props.variant === "Construccion" ? "pl-16 text-xl" : "text-xl"
+                }
+              >
                 {props.children}
               </p>
             </div>
