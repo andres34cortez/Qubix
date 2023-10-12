@@ -5,6 +5,7 @@ import Azul from "../Assets/azul.svg";
 import Naranja from "../Assets/naranja.svg";
 import Gris from "../Assets/gris.svg";
 
+
 export default function Us() {
   return (
     /*  <div className='flex relative w-full items-center justify-center bg-gray-100 h-screen'>

@@ -26,7 +26,7 @@ const LottieAnimation: React.FC<LottieAnimationProps> = ({ animationData }) => {
     }
   }, [animationData]);
 
-  return <div ref={containerRef} className="flex self-center w-[1000px]" />;
+  return <div ref={containerRef} className="flex self-center w-[1000px] opacity-25" />;
 };
 
 export default LottieAnimation;
