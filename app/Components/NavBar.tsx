@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import LogoColor from "../Assets/LogoColor.svg";
+import instagram from "../Assets/instagram.svg";
+import linkedin from "../Assets/linkedin.svg";
 
 export default function Navbar() {
   /*   const [navHidden, setNavHidden] = useState(false);
@@ -42,7 +44,19 @@ export default function Navbar() {
       <Link href='/'>
         <Image src={LogoColor} alt='Logo' className='w-[110px]' />
       </Link>
+
       <ul className='flex space-x-6 items-center '>
+        <div className='flex flex-row mr-8'>
+          <a href='www/instagram.com'>
+            <Image
+              src={instagram}
+              alt=''
+              className='w-[24px] mr-4 cursor-pointer  '
+            />
+          </a>
+
+          <Image src={linkedin} alt='' className='w-[24px] cursor-pointer' />
+        </div>
         <li>
           <h1
             onClick={() => scrollTo("Services")}
