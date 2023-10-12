@@ -7,6 +7,7 @@ import Carousel from "./Components/CarouselImg";
 import Navbar from "./Components/NavBar";
 import Marquee from "./Components/Marquee";
 import Naranja from "./Assets/naranja.svg";
+import Azul from "./Assets/azul.svg";
 import Gris from "./Assets/gris.svg";
 import { ContactForm } from "./Components/Form";
 import Image from "next/image";
@@ -51,10 +52,10 @@ export default function Home() {
               className="flex flex-col min-h-[300px] border-l-4 border-t-4 border-r-4 border-[#008eaa] mt-16 pt-6 px-6 rounded-lg mb-2"
               style={{ width: `calc(100vw - 128px)` }}
             >
-              <h1 className="mb-4 text-4xl font-semibold text-[#008eaa]">
+              <h1 className="mb-4 text-4xl font-semibold text-[#008eaa] self-center">
                 QUIENES SOMOS?
               </h1>
-              <p className="text-[#374151] text-xl">
+              <p className="text-[#374151] text-xl max-w-[800px] self-center text-center">
                 QUBIX es una pyme que brinda soluciones integrales, abocada a la
                 actividad de ingeniería, arquitectura y construcción
                 multidisciplinaria, venta de productos e insumos asociados al
@@ -160,6 +161,18 @@ export default function Home() {
                   id="Contact"
                   className="flex flex-col h-[700px] w-full relative"
                 >
+                  <div className="flex flex-row relative top-0 mx-auto">
+                    <Image
+                      src={Azul}
+                      alt=""
+                      className="w-[700px] z-[-1] scale-x-[-1] translate-x-[20px]"
+                    />
+                    <Image
+                      src={Azul}
+                      alt=""
+                      className="w-[700px] z-[-1] translate-x-[-20px]"
+                    />
+                  </div>
                   <Image
                     src={Naranja}
                     alt=""
@@ -170,10 +183,12 @@ export default function Home() {
                     alt=""
                     className="w-[600px] bottom-0 right-0 absolute ml-auto mb-0  z-[-1]"
                   />
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold my-10 sm:my-20 pl-4 sm:pl-8 md:pl-12 lg:pl-24">
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold my-10 sm:my-20 pl-4 sm:pl-8 md:pl-12 lg:pl-24 absolute">
                     Contactate con nosotros!
                   </h1>
-                  <ContactForm />
+                  <div className="mt-[-60px]">
+                    <ContactForm />
+                  </div>
                 </div>
               </>
             )}
