@@ -39,28 +39,28 @@ export default function Navbar() {
 
   return (
     <nav
-      className={` flex fixed flex-row justify-between z-10 py-3 px-16 w-full border-b border-[#E5E7EB] shadow-[1px_-3px_50px_5px_rgba(230,230,230,0.6)] transition-transform duration-300 bg-white `}
+      className={` flex fixed flex-row justify-between z-50 py-3 px-16 w-full border-b border-[#E5E7EB] shadow-[1px_-3px_50px_5px_rgba(230,230,230,0.6)] transition-transform duration-300 bg-white `}
     >
-      <Link href='/'>
-        <Image src={LogoColor} alt='Logo' className='w-[110px]' />
+      <Link href="/">
+        <Image src={LogoColor} alt="Logo" className="w-[110px]" />
       </Link>
 
-      <ul className='flex space-x-6 items-center '>
-        <div className='flex flex-row mr-8'>
-          <a href='www/instagram.com'>
+      <ul className="flex space-x-6 items-center ">
+        <div className="flex flex-row mr-8">
+          <a href="www/instagram.com">
             <Image
               src={instagram}
-              alt=''
-              className='w-[24px] mr-4 cursor-pointer  '
+              alt=""
+              className="w-[24px] mr-4 cursor-pointer  "
             />
           </a>
 
-          <Image src={linkedin} alt='' className='w-[24px] cursor-pointer' />
+          <Image src={linkedin} alt="" className="w-[24px] cursor-pointer" />
         </div>
         <li>
           <h1
             onClick={() => scrollTo("Services")}
-            className='text-[#303030] hover:text-black cursor-pointer hover:font-medium duration-300'
+            className="text-[#303030] hover:text-black cursor-pointer hover:font-medium duration-300"
           >
             Servicios
           </h1>
@@ -68,7 +68,7 @@ export default function Navbar() {
         <li>
           <h1
             onClick={() => scrollTo("Contact")}
-            className='text-[#303030] hover:text-black cursor-pointer hover:font-medium duration-300'
+            className="text-[#303030] hover:text-black cursor-pointer hover:font-medium duration-300"
           >
             Contacto
           </h1>
