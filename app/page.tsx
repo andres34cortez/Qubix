@@ -157,29 +157,29 @@ export default function Home() {
                     title=' Construcciones Civiles, Electromecánicas y Montaje.-'
                     variant='Construccion'
                   >
-                    {" "}
+                    
                     <p className='text-2xl'>
-                      ▪ Arquitectura industrial e ingeniería para proyectos{" "}
+                      ▪ Arquitectura industrial e ingeniería para proyectos
                       <br />
                       ▪ Planificación, gestión y proyectos de obra mediante
                       sistema BIM.-
                       <br /> ▪ Construcciones: <br /> &nbsp; o Montaje y
-                      soldaduras especiales <br /> &nbsp; o Metalúrgica <br />{" "}
-                      &nbsp; o Pipping <br /> &nbsp; o Módulos para minería{" "}
+                      soldaduras especiales <br /> &nbsp; o Metalúrgica <br />
+                      &nbsp; o Pipping <br /> &nbsp; o Módulos para minería
                       <br /> &nbsp; o Tradicionales y steal frame.-
-                      <br /> ▪ Red de incendio y Sistema de detección. -{" "}
+                      <br /> ▪ Red de incendio y Sistema de detección. -
                     </p>
                   </Section>
                   <Section
                     title=' Mantenimiento Industrial'
                     variant='Mantenimiento'
                   >
-                    {" "}
+                    
                     <p className='text-2xl'>
                       ▪ Mantenimiento edilicio.- <br /> ▪ Mantenimiento
                       eléctrico y mecánico in situ o en taller.- <br />▪
                       Mantenimiento en redes de incendio y sistemas de
-                      detección.-{" "}
+                      detección.-
                     </p>
                   </Section>
                 </div>

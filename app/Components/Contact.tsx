@@ -2,9 +2,9 @@ import Image from "next/image";
 import React from "react";
 import { ContactForm } from "./Form";
 import Naranja from "../Assets/naranja.svg";
-import Azul from "../Assets/azul.svg";
+
 import Gris from "../Assets/gris.svg";
-import Mapa from "../Assets/Mapa.png";
+import Mapa from "../Assets/mapa.png";
 export default function Contact() {
   return (
     <div>
