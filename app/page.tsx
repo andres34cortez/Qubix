@@ -13,8 +13,9 @@ import Image from "next/image";
 import LottieAnimation from "./Components/Qubix";
 import animationData from "./Assets/Lotties/data1.json";
 import { motion, AnimatePresence } from "framer-motion";
-import fondo from "./Assets/Carrusel2.png";
+
 import Contact from "./Components/Contact";
+import CarouselImg from "./Components/CarouselImg";
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(false);
@@ -39,7 +40,7 @@ export default function Home() {
             <Navbar />
           </motion.div>
         )}
-        <div className='pt-[65px]' />
+        <div className='pt-10' />
         <motion.div
           className={`hidden lg:flex lg:flex-col lg:w-full lg:items-center lg:justify-center `}
           style={{
@@ -47,13 +48,13 @@ export default function Home() {
           }}
         >
           <motion.div
-            className={`lg:absolute lg:top-0 lg:left-0 lg:right-0 lg:bottom-0 lg:w-full lg:items-center lg:justify-center bg-cover bg-no-repeat bg-center bg-[url('./Assets/Carrusel2.png')] -z-10`}
+            className={`lg:absolute lg:top-0 lg:left-0 lg:right-0 lg:bottom-0 lg:w-full lg:items-center lg:justify-center bg-cover bg-no-repeat bg-center `}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 2, delay: 6 }}
           />
           <motion.div
-            className={`lg:absolute lg:top-0 lg:left-0 lg:right-0 lg:bottom-0 lg:w-full lg:items-center lg:justify-center bg-black bg-opacity-[0.1] -z-[-5]`}
+            className={`lg:absolute lg:top-0 lg:left-0 lg:right-0 lg:bottom-0 lg:w-full lg:items-center lg:justify-center -z-[-5]`}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 2, delay: 6 }}
@@ -64,15 +65,15 @@ export default function Home() {
             transition={{ duration: 2, delay: 6 }}
           >
             <div
-              className='flex flex-col min-h-[300px] border-l-4 border-t-4 border-r-4 border-[#008eaa] mt-16 pt-6 px-6 rounded-lg mb-2 z-10'
+              className='flex flex-col min-h-[300px] border-l-4 border-t-4 border-r-4 border-[#008eaa] mt-16 pt-12 px-6 rounded-lg mb-2 z-10'
               style={{
                 width: `calc(100vw - 128px)`,
               }}
             >
-              <h1 className='mb-4 text-4xl font-semibold text-[#008eaa] self-center drop-shadow-lg z-10'>
+              <h1 className='mb-4 text-4xl font-semibold text-[#008eaa] self-center drop-shadow-lg z-10 '>
                 QUIENES SOMOS?
               </h1>
-              <p className='text-white text-xl max-w-[800px] self-center text-center z-10'>
+              <p className='text-black text-xl max-w-[800px] self-center text-center z-10'>
                 QUBIX es una pyme que brinda soluciones integrales, abocada a la
                 actividad de ingeniería, arquitectura y construcción
                 multidisciplinaria, venta de productos e insumos asociados al
@@ -95,14 +96,14 @@ export default function Home() {
             transition={{ duration: 2, delay: 6 }}
           >
             <div
-              className='flex flex-row flex-1 w-full mb-24 z-10'
+              className='flex flex-row flex-1 w-full z-10 '
               style={{ width: `calc(100vw - 128px)` }}
             >
               <div className='flex flex-col flex-1 border-l-4 border-b-4 border-[#ff6a14] min-h-[400px] mt-2 mr-5 rounded-lg pl-6 pt-6 pr-[200px] z-10'>
                 <h1 className='mb-4 text-4xl font-semibold text-[#ff6a14] z-10 drop-shadow-lg'>
                   MISION
                 </h1>
-                <p className='text-white text-xl z-10 drop-shadow-lg'>
+                <p className='text-black text-xl z-10 drop-shadow-lg'>
                   Nuestra misión es siempre con el cliente, somos una empresa
                   que desarrolla proyectos y los ejecuta con exigentes
                   estándares de seguridad, calidad y puntualidad. Dicha misión
@@ -115,7 +116,7 @@ export default function Home() {
                 <h1 className='mb-4 text-4xl font-semibold text-[#3f3b3f] z-10 drop-shadow-lg '>
                   VISION
                 </h1>
-                <p className='text-white text-xl z-10'>
+                <p className='text-black text-xl z-10 drop-shadow-lg'>
                   Nuestra visión, es ser una empresa valorizada y destacada por
                   su compromiso y confiabilidad con sus clientes, y proveedores,
                   ofreciendo el mejor servicio e innovación en sus proyectos.
@@ -133,7 +134,12 @@ export default function Home() {
             animate={{ opacity: 1, zIndex: 10 }}
             transition={{ duration: 0.4 }}
           >
-            <Marquee />
+            <div>
+              <Marquee />
+            </div>
+            <div>
+              <CarouselImg />
+            </div>
             {isVisible && (
               <>
                 <div
@@ -157,7 +163,6 @@ export default function Home() {
                     title=' Construcciones Civiles, Electromecánicas y Montaje.-'
                     variant='Construccion'
                   >
-                    
                     <p className='text-2xl'>
                       ▪ Arquitectura industrial e ingeniería para proyectos
                       <br />
@@ -174,7 +179,6 @@ export default function Home() {
                     title=' Mantenimiento Industrial'
                     variant='Mantenimiento'
                   >
-                    
                     <p className='text-2xl'>
                       ▪ Mantenimiento edilicio.- <br /> ▪ Mantenimiento
                       eléctrico y mecánico in situ o en taller.- <br />▪

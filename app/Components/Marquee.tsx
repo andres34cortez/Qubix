@@ -18,7 +18,7 @@ ARCOR
 
 const Marquee: React.FC = () => {
   return (
-    <div className="flex flex-row items-center bg-[#544b54] text-white text-2xl w-full z-10 ">
+    <div className="flex flex-row items-center  text-white text-4xl w-full z-10 mb-4 ">
       <div className="relative w-full h-[45px] overflow-x-hidden">
         <div className="absolute whitespace-nowrap flex row-auto  animate-marquee w-full mt-2">
           <Image className="w-11 mr-12" src={arcor} alt="" />
