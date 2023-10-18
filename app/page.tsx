@@ -39,7 +39,7 @@ export default function Home() {
         <motion.div
           className={`hidden lg:flex lg:flex-col lg:w-full lg:items-center lg:justify-center`}
           style={{
-            height: `calc(100vh - 104px)`,
+            height: `calc(100vh - 135px)`,
           }}
         >
           <motion.div
