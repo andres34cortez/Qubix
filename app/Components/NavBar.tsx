@@ -22,38 +22,38 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`flex fixed flex-row justify-between z-50 py-3 px-4 md:px-16 w-full border-b border-[#E5E7EB] shadow-[1px_-3px_50px_5px_rgba(230,230,230,0.6)] transition-transform duration-300 bg-white`}
+      className={`flex lg:fixed flex-row justify-between z-50 py-3 px-4 md:px-16 lg:w-full border-b border-[#E5E7EB] shadow-[1px_-3px_50px_5px_rgba(230,230,230,0.6)] transition-transform duration-300 bg-white`}
     >
-      <Link href='/'>
-        <Image src={LogoColor} alt='Logo' className='w-[110px]' />
+      <Link href="/">
+        <Image src={LogoColor} alt="Logo" className="w-[110px]" />
       </Link>
 
-      <div className='md:flex space-x-6 items-center hidden'>
-        <div className='flex flex-row mr-8'>
+      <div className="md:flex space-x-6 items-center hidden">
+        <div className="flex flex-row mr-8">
           <a
-            href='https://www.instagram.com/qubixsas/'
-            target='_blank'
-            rel='noopener noreferrer'
+            href="https://www.instagram.com/qubixsas/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <Image
               src={instagram}
-              alt=''
-              className='w-[24px] mr-4 cursor-pointer'
+              alt=""
+              className="w-[24px] mr-4 cursor-pointer"
             />
           </a>
 
           <a
-            href='https://www.linkedin.com/company/qubixconstrucciones/'
-            target='_blank'
-            rel='noopener noreferrer'
+            href="https://www.linkedin.com/company/qubixconstrucciones/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <Image src={linkedin} alt='' className='w-[24px] cursor-pointer' />
+            <Image src={linkedin} alt="" className="w-[24px] cursor-pointer" />
           </a>
         </div>
         <li style={{ listStyleType: "none" }}>
           <h1
             onClick={() => scrollTo("Services")}
-            className='text-[#303030] hover:text-black cursor-pointer hover:font-medium duration-300'
+            className="text-[#303030] hover:text-black cursor-pointer hover:font-medium duration-300"
           >
             Servicios
           </h1>
@@ -61,26 +61,26 @@ export default function Navbar() {
         <li style={{ listStyleType: "none" }}>
           <h1
             onClick={() => scrollTo("Contact")}
-            className='text-[#303030] hover:text-black cursor-pointer hover:font-medium duration-300'
+            className="text-[#303030] hover:text-black cursor-pointer hover:font-medium duration-300"
           >
             Contacto
           </h1>
         </li>
       </div>
 
-      <div className='md:hidden'>
-        <button onClick={toggleMenu} className='cursor-pointer'>
-          <Image src={menuIcon} alt='Menu' className='w-[24px]' />
+      <div className="md:hidden">
+        <button onClick={toggleMenu} className="cursor-pointer">
+          <Image src={menuIcon} alt="Menu" className="w-[24px]" />
         </button>
       </div>
 
       {isMenuOpen && (
-        <div className='md:hidden absolute top-16 right-0 bg-white w-60 shadow-md'>
-          <ul className='p-4 space-y-4'>
+        <div className="md:hidden absolute top-16 right-0 bg-white w-60 shadow-md">
+          <ul className="p-4 space-y-4">
             <li>
               <h1
                 onClick={() => scrollTo("Services")}
-                className='cursor-pointer'
+                className="cursor-pointer"
               >
                 Servicios
               </h1>
@@ -88,7 +88,7 @@ export default function Navbar() {
             <li>
               <h1
                 onClick={() => scrollTo("Contact")}
-                className='cursor-pointer'
+                className="cursor-pointer"
               >
                 Contacto
               </h1>
