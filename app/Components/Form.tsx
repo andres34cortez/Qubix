@@ -53,67 +53,67 @@ export function ContactForm() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="space-y-8 max-w-[800px] w-full mx-auto border border-[#E5E7EB] rounded-[6px] p-4 bg-gray-100"
+        className='space-y-8 max-w-[800px] w-full mx-auto border border-[#E5E7EB] rounded-[6px] p-4 bg-gray-100'
         /*   className='space-y-8 w-[600px] self-center border border-[#E5E7EB] rounded-[6px] p-9 bg-gray-100' */
       >
-        <div className="flex flex-row items-center justify-">
+        <div className='flex flex-row items-center justify-'>
           <FormField
             control={form.control}
-            name="name"
+            name='name'
             render={({ field }) => (
-              <FormItem className="pr-4 flex-1">
-                <FormLabel className="text-xl text-[#544b54]">Nombre</FormLabel>
+              <FormItem className='pr-4 flex-1'>
+                <FormLabel className='text-xl text-[#544b54]'>Nombre</FormLabel>
                 <FormControl>
-                  <Input placeholder="Nombre" {...field} />
+                  <Input placeholder='Nombre' {...field} />
                 </FormControl>
-                <FormMessage className="text-sm" />
+                <FormMessage className='text-sm' />
               </FormItem>
             )}
           />
           <FormField
             control={form.control}
-            name="email"
+            name='email'
             render={({ field }) => (
-              <FormItem className="pr-4 flex-1">
-                <FormLabel className="text-xl text-[#544b54]">Email</FormLabel>
+              <FormItem className='pr-4 flex-1'>
+                <FormLabel className='text-xl text-[#544b54]'>Email</FormLabel>
                 <FormControl>
-                  <Input placeholder="Email" {...field} />
+                  <Input placeholder='Email' {...field} />
                 </FormControl>
-                <FormMessage className="text-sm" />
+                <FormMessage className='text-sm' />
               </FormItem>
             )}
           />
           <FormField
             control={form.control}
-            name="phone"
+            name='phone'
             render={({ field }) => (
-              <FormItem className="flex-1">
-                <FormLabel className="text-xl text-[#544b54]">
+              <FormItem className='flex-1'>
+                <FormLabel className='text-xl text-[#544b54]'>
                   Telefono
                 </FormLabel>
                 <FormControl>
-                  <Input placeholder="Telefono" {...field} />
+                  <Input placeholder='Telefono' {...field} />
                 </FormControl>
-                <FormMessage className="text-sm" />
+                <FormMessage className='text-sm' />
               </FormItem>
             )}
           />
         </div>
         <FormField
           control={form.control}
-          name="message"
+          name='message'
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-xl text-[#544b54]">Mensaje</FormLabel>
+              <FormLabel className='text-xl text-[#544b54]'>Mensaje</FormLabel>
               <FormControl>
-                <Textarea placeholder="Dejanos tu mensaje!" {...field} />
+                <Textarea placeholder='Dejanos tu mensaje!' {...field} />
               </FormControl>
-              <FormMessage className="text-sm" />
+              <FormMessage className='text-sm' />
             </FormItem>
           )}
         />
-        <div className="flex flex-col sm:flex-row justify-end items-center">
-          <Button type="submit">Enviar</Button>
+        <div className='flex flex-col sm:flex-row justify-end items-center'>
+          <Button type='submit'>Enviar</Button>
         </div>
       </form>
     </Form>
