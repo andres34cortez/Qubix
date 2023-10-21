@@ -5,7 +5,7 @@ import arcor from "../Assets/Clients/Arcor_logo.svg.png";
 import Cat from "../Assets/Clients/finning.png";
 import SaintG from "../Assets/Clients/saintG.png";
 import YPF from "../Assets/Clients/ypfluz.png";
-import Distrocuyo from "../Assets/Clients/distroCuyo.jpg";
+import Distrocuyo from "../Assets/Clients/distrocuyo.jpg";
 import Mseguridad from "../Assets/Clients/maxiseguridad.png";
 import PedidosYa from "../Assets/Clients/pedidosYa.jpg";
 import JoseMaria from "../Assets/Clients/joseMaria.png";
