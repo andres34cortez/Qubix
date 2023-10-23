@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Link from "next/link";
 import Image from "next/image";
 import LogoColor from "../Assets/LogoColor.svg";
 import instagram from "../Assets/instagram.svg";
@@ -22,12 +21,11 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`flex lg:fixed flex-row justify-between z-50 py-3 px-4 md:px-16 lg:w-full border-b border-[#E5E7EB] shadow-[1px_-3px_50px_5px_rgba(230,230,230,0.6)] transition-transform duration-300 bg-white`}
+      className={`flex lg:fixed flex-row justify-between items-center z-50 py-3 px-4 md:px-16 lg:w-full border-b border-[#E5E7EB] shadow-[1px_-3px_50px_5px_rgba(120,120,120,0.1)] transition-transform duration-300 bg-white`}
     >
-      <Link href="/">
+      <div onClick={() => scrollTo("Home")} className="cursor-pointer">
         <Image src={LogoColor} alt="Logo" className="w-[110px]" />
-      </Link>
-
+      </div>
       <div className="md:flex space-x-6 items-center hidden">
         <div className="flex flex-row mr-8">
           <a
@@ -41,7 +39,6 @@ export default function Navbar() {
               className="w-[24px] mr-4 cursor-pointer"
             />
           </a>
-
           <a
             href="https://www.linkedin.com/company/qubixconstrucciones/"
             target="_blank"
@@ -67,13 +64,11 @@ export default function Navbar() {
           </h1>
         </li>
       </div>
-
       <div className="md:hidden">
         <button onClick={toggleMenu} className="cursor-pointer">
           <Image src={menuIcon} alt="Menu" className="w-[24px]" />
         </button>
       </div>
-
       {isMenuOpen && (
         <div className="md:hidden absolute top-16 right-0 bg-white w-60 shadow-md">
           <ul className="p-4 space-y-4">

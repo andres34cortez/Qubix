@@ -10,7 +10,7 @@ export default function CarouselImg() {
       id: 1,
       imageSrc: fondo,
       title:
-        "PROYECTO YPF ESTO ES UN TEXTO DE PRUEBA - PROYECTO YPF ESTO ES UN TEXTO DE PRUEBA- PROYECTO YPF ESTO ES UN TEXTO DE PRUEBA-PROYECTO YPF ESTO ES UN TEXTO DE PRUEBA-PROYECTO YPF ESTO ES UN TEXTO DE PRUEBAPROYECTO YPF ESTO ES UN TEXTO DE PRUEBAv",
+        "PROYECTO YPF ESTO ES UN TEXTO DE PRUEBA - PROYECTO YPF ESTO ES UN TEXTO DE PRUEBA",
     },
     {
       id: 2,
@@ -33,12 +33,14 @@ export default function CarouselImg() {
             <div
               style={{
                 position: "absolute",
-                top: "100px", // Ajusta la posición vertical
+                top: "50px", // Ajusta la posición vertical
                 left: "40px", // Ajusta la posición horizontal
-                width:"300px",
+                width: "600px",
                 background: "rgba(0, 0, 0, 0.5)", // Fondo semitransparente
                 color: "white", // Color del texto
-                padding: "5px", // Espaciado alrededor del título
+                padding: "12px", // Espaciado alrededor del título
+                fontSize: "24px",
+                fontWeight: "500",
               }}
             >
               {item.title}

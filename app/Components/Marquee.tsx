@@ -20,97 +20,65 @@ ARCOR
 
 const Marquee: React.FC = () => {
   return (
-    <div className="flex flex-row items-center text-white text-4xl w-full z-10 h-[96px] overflow-hidden">
-      <div className="whitespace-nowrap flex flex-row animate-marquee w-full">
-        <Image className="w-20 mr-12" src={arcor} alt="" />
-        <Image className="w-20 mr-12" src={Cat} alt="" />
-        <Image className="w-20 mr-12" src={SaintG} alt="" />
-        <Image className="w-20 mr-12" src={YPF} alt="" />
-        <Image className="w-20 mr-12" src={Distrocuyo} alt="" />
-        <Image className="w-20 mr-12" src={Mseguridad} alt="" />
-        <Image className="w-20 mr-12" src={PedidosYa} alt="" />
-        <Image className="w-20 mr-12" src={JoseMaria} alt="" />
+    <div className="flex flex-row items-center text-white text-4xl w-full z-10 h-[124px] overflow-hidden">
+      <div className="whitespace-nowrap flex flex-row animate-marquee w-full items-center gap-20">
+        <Image className="h-20" src={arcor} alt="" />
+        <Image className="h-[72px]" src={Cat} alt="" />
+        <Image className="h-20" src={SaintG} alt="" />
+        <Image className="h-20" src={YPF} alt="" />
+        <Image className="h-[72px]" src={Distrocuyo} alt="" />
+        <Image className="h-[72px]" src={Mseguridad} alt="" />
+        <Image className="h-[72px]" src={PedidosYa} alt="" />
+        <Image className="h-[72px]" src={JoseMaria} alt="" />
         {/* repeat */}
-        <Image className="w-20 mr-12" src={arcor} alt="" />
-        <Image className="w-20 mr-12" src={Cat} alt="" />
-        <Image className="w-20 mr-12" src={SaintG} alt="" />
-        <Image className="w-20 mr-12" src={YPF} alt="" />
-        <Image className="w-20 mr-12" src={Distrocuyo} alt="" />
-        <Image className="w-20 mr-12" src={Mseguridad} alt="" />
-        <Image className="w-20 mr-12" src={PedidosYa} alt="" />
-        <Image className="w-20 mr-12" src={JoseMaria} alt="" />
-        <Image className="w-20 mr-12" src={arcor} alt="" />
-        <Image className="w-20 mr-12" src={Cat} alt="" />
-        <Image className="w-20 mr-12" src={SaintG} alt="" />
-        <Image className="w-20 mr-12" src={YPF} alt="" />
-        <Image className="w-20 mr-12" src={Distrocuyo} alt="" />
-        <Image className="w-20 mr-12" src={Mseguridad} alt="" />
-        <Image className="w-20 mr-12" src={PedidosYa} alt="" />
-        <Image className="w-20 mr-12" src={JoseMaria} alt="" />
-        <Image className="w-20 mr-12" src={arcor} alt="" />
-        <Image className="w-20 mr-12" src={Cat} alt="" />
-        <Image className="w-20 mr-12" src={SaintG} alt="" />
-        <Image className="w-20 mr-12" src={YPF} alt="" />
-        <Image className="w-20 mr-12" src={Distrocuyo} alt="" />
-        <Image className="w-20 mr-12" src={Mseguridad} alt="" />
-        <Image className="w-20 mr-12" src={PedidosYa} alt="" />
-        <Image className="w-20 mr-12" src={JoseMaria} alt="" />
-        <Image className="w-20 mr-12" src={arcor} alt="" />
-        <Image className="w-20 mr-12" src={Cat} alt="" />
-        <Image className="w-20 mr-12" src={SaintG} alt="" />
-        <Image className="w-20 mr-12" src={YPF} alt="" />
-        <Image className="w-20 mr-12" src={Distrocuyo} alt="" />
-        <Image className="w-20 mr-12" src={Mseguridad} alt="" />
-        <Image className="w-20 mr-12" src={PedidosYa} alt="" />
-        <Image className="w-20 mr-12" src={JoseMaria} alt="" />
-        <Image className="w-20 mr-12" src={arcor} alt="" />
-        <Image className="w-20 mr-12" src={Cat} alt="" />
-        <Image className="w-20 mr-12" src={SaintG} alt="" />
-        <Image className="w-20 mr-12" src={YPF} alt="" />
-        <Image className="w-20 mr-12" src={Distrocuyo} alt="" />
-        <Image className="w-20 mr-12" src={Mseguridad} alt="" />
-        <Image className="w-20 mr-12" src={PedidosYa} alt="" />
-        <Image className="w-20 mr-12" src={JoseMaria} alt="" />
-        <Image className="w-20 mr-12" src={arcor} alt="" />
-        <Image className="w-20 mr-12" src={Cat} alt="" />
-        <Image className="w-20 mr-12" src={SaintG} alt="" />
-        <Image className="w-20 mr-12" src={YPF} alt="" />
-        <Image className="w-20 mr-12" src={Distrocuyo} alt="" />
-        <Image className="w-20 mr-12" src={Mseguridad} alt="" />
-        <Image className="w-20 mr-12" src={PedidosYa} alt="" />
-        <Image className="w-20 mr-12" src={JoseMaria} alt="" />
-        <Image className="w-20 mr-12" src={arcor} alt="" />
-        <Image className="w-20 mr-12" src={Cat} alt="" />
-        <Image className="w-20 mr-12" src={SaintG} alt="" />
-        <Image className="w-20 mr-12" src={YPF} alt="" />
-        <Image className="w-20 mr-12" src={Distrocuyo} alt="" />
-        <Image className="w-20 mr-12" src={Mseguridad} alt="" />
-        <Image className="w-20 mr-12" src={PedidosYa} alt="" />
-        <Image className="w-20 mr-12" src={JoseMaria} alt="" />
-        <Image className="w-20 mr-12" src={arcor} alt="" />
-        <Image className="w-20 mr-12" src={Cat} alt="" />
-        <Image className="w-20 mr-12" src={SaintG} alt="" />
-        <Image className="w-20 mr-12" src={YPF} alt="" />
-        <Image className="w-20 mr-12" src={Distrocuyo} alt="" />
-        <Image className="w-20 mr-12" src={Mseguridad} alt="" />
-        <Image className="w-20 mr-12" src={PedidosYa} alt="" />
-        <Image className="w-20 mr-12" src={JoseMaria} alt="" />
-        <Image className="w-20 mr-12" src={arcor} alt="" />
-        <Image className="w-20 mr-12" src={Cat} alt="" />
-        <Image className="w-20 mr-12" src={SaintG} alt="" />
-        <Image className="w-20 mr-12" src={YPF} alt="" />
-        <Image className="w-20 mr-12" src={Distrocuyo} alt="" />
-        <Image className="w-20 mr-12" src={Mseguridad} alt="" />
-        <Image className="w-20 mr-12" src={PedidosYa} alt="" />
-        <Image className="w-20 mr-12" src={JoseMaria} alt="" />
-        <Image className="w-20 mr-12" src={arcor} alt="" />
-        <Image className="w-20 mr-12" src={Cat} alt="" />
-        <Image className="w-20 mr-12" src={SaintG} alt="" />
-        <Image className="w-20 mr-12" src={YPF} alt="" />
-        <Image className="w-20 mr-12" src={Distrocuyo} alt="" />
-        <Image className="w-20 mr-12" src={Mseguridad} alt="" />
-        <Image className="w-20 mr-12" src={PedidosYa} alt="" />
-        <Image className="w-20 mr-12" src={JoseMaria} alt="" />
+        <Image className="h-20" src={arcor} alt="" />
+        <Image className="h-[72px]" src={Cat} alt="" />
+        <Image className="h-20" src={SaintG} alt="" />
+        <Image className="h-20" src={YPF} alt="" />
+        <Image className="h-[72px]" src={Distrocuyo} alt="" />
+        <Image className="h-[72px]" src={Mseguridad} alt="" />
+        <Image className="h-[72px]" src={PedidosYa} alt="" />
+        <Image className="h-[72px]" src={JoseMaria} alt="" />
+        <Image className="h-20" src={arcor} alt="" />
+        <Image className="h-[72px]" src={Cat} alt="" />
+        <Image className="h-20" src={SaintG} alt="" />
+        <Image className="h-20" src={YPF} alt="" />
+        <Image className="h-[72px]" src={Distrocuyo} alt="" />
+        <Image className="h-[72px]" src={Mseguridad} alt="" />
+        <Image className="h-[72px]" src={PedidosYa} alt="" />
+        <Image className="h-[72px]" src={JoseMaria} alt="" />
+        <Image className="h-20" src={arcor} alt="" />
+        <Image className="h-[72px]" src={Cat} alt="" />
+        <Image className="h-20" src={SaintG} alt="" />
+        <Image className="h-20" src={YPF} alt="" />
+        <Image className="h-[72px]" src={Distrocuyo} alt="" />
+        <Image className="h-[72px]" src={Mseguridad} alt="" />
+        <Image className="h-[72px]" src={PedidosYa} alt="" />
+        <Image className="h-[72px]" src={JoseMaria} alt="" />
+        <Image className="h-20" src={arcor} alt="" />
+        <Image className="h-[72px]" src={Cat} alt="" />
+        <Image className="h-20" src={SaintG} alt="" />
+        <Image className="h-20" src={YPF} alt="" />
+        <Image className="h-[72px]" src={Distrocuyo} alt="" />
+        <Image className="h-[72px]" src={Mseguridad} alt="" />
+        <Image className="h-[72px]" src={PedidosYa} alt="" />
+        <Image className="h-[72px]" src={JoseMaria} alt="" />
+        <Image className="h-20" src={arcor} alt="" />
+        <Image className="h-[72px]" src={Cat} alt="" />
+        <Image className="h-20" src={SaintG} alt="" />
+        <Image className="h-20" src={YPF} alt="" />
+        <Image className="h-[72px]" src={Distrocuyo} alt="" />
+        <Image className="h-[72px]" src={Mseguridad} alt="" />
+        <Image className="h-[72px]" src={PedidosYa} alt="" />
+        <Image className="h-[72px]" src={JoseMaria} alt="" />
+        <Image className="h-20" src={arcor} alt="" />
+        <Image className="h-[72px]" src={Cat} alt="" />
+        <Image className="h-20" src={SaintG} alt="" />
+        <Image className="h-20" src={YPF} alt="" />
+        <Image className="h-[72px]" src={Distrocuyo} alt="" />
+        <Image className="h-[72px]" src={Mseguridad} alt="" />
+        <Image className="h-[72px]" src={PedidosYa} alt="" />
+        <Image className="h-[72px]" src={JoseMaria} alt="" />
       </div>
     </div>
   );
