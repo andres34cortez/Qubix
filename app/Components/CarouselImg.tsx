@@ -2,7 +2,7 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
-import fondo from "../Assets/Carrusel2.png";
+import fondo from "../Assets/editadas/principal.jpg";
 
 export default function CarouselImg() {
   const slideItems = [
@@ -27,14 +27,15 @@ export default function CarouselImg() {
   return (
     <Carousel showStatus={false} showThumbs={false}>
       {slideItems.map((item) => (
-        <div key={item.id} style={{ maxHeight: "950px" }}>
+        <div key={item.id} style={{ maxHeight: "800px" }}>
           <div style={{ position: "relative" }}>
             <Image src={item.imageSrc} alt={`Slide ${item.id}`} />
             <div
               style={{
                 position: "absolute",
                 top: "100px", // Ajusta la posición vertical
-                left: "0px", // Ajusta la posición horizontal
+                left: "40px", // Ajusta la posición horizontal
+                width:"300px",
                 background: "rgba(0, 0, 0, 0.5)", // Fondo semitransparente
                 color: "white", // Color del texto
                 padding: "5px", // Espaciado alrededor del título
