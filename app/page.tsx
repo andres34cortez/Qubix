@@ -207,7 +207,7 @@ export default function Home() {
             y el mantenimiento general de industrias.
           </p>
         </div>
-        <div id="Services" className="flex flex-col items-center w-full">
+        <div id="Servicesm" className="flex flex-col items-center w-full">
           <Section
             title=" VENTA Y ALQUILER DE EQUIPOS E INSUMOS"
             variant="Productos"
@@ -238,7 +238,7 @@ export default function Home() {
             Servicio integral mecánico para minería y empresas constructoras.
           </Section>
         </div>
-        <div id="Contact" className="flex flex-col h-[600px] w-full relative">
+        <div id="Contactm" className="flex flex-col h-[600px] w-full relative">
           <Contact />
         </div>
       </div>
