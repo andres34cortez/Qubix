@@ -209,33 +209,39 @@ export default function Home() {
         </div>
         <div id="Services" className="flex flex-col items-center w-full">
           <Section
-            title=" VENTA Y ALQUILER DE EQUIPOS E INSUMOS"
+            title=" Venta y alquiler de equipos e insumos"
             variant="Productos"
           >
-            Ventas de insumos industrial.
-            <br />
-            Ventas de insumos para la construcción.
-            <br />
-            Venta y alquiler de herramientas.
-            <br />
-            Alquiler de equipos para minería/construcción.
+            <p className="text-lg">
+              ▪ Ventas de insumos industrial.
+              <br />
+              ▪ Ventas de insumos para la construcción.
+              <br />
+              ▪ Venta y alquiler de herramientas.
+              <br />▪ Alquiler de equipos para minería/construcción.
+            </p>
           </Section>
-          <Section title="CONSTRUCCIONES EN GENERAL" variant="Construccion">
-            Civiles, electromecánicas.
-            <br /> Arquitectura industrial e ingeniería para Diseño y proyectos
-            de obra Civil y electromecánica. <br />
-            Planificación, gestión y proyectos de obra mediante sistema BIM.
-            <br /> Construcciones especiales. Montaje, y soldaduras especiales.
-            Metalúrgica en general. Módulos estructurales industriales o de
-            viviendas.
-            <br /> Construcción Tradicional o Sistemas Alternativos, Steel
-            frame, cassaforma y panelizado
+          <Section
+            title="Construcciones Civiles, Electromecánicas y Montaje."
+            variant="Construccion"
+          >
+            <p className="text-lg">
+              ▪ Arquitectura industrial e ingeniería para proyectos
+              <br />
+              ▪ Planificación, gestión y proyectos de obra mediante sistema BIM.
+              <br /> ▪ Construcciones: <br /> &nbsp; - Montaje y soldaduras
+              especiales <br /> &nbsp; - Metalúrgica <br />
+              &nbsp; - Pipping <br /> &nbsp; - Módulos para minería
+              <br /> &nbsp; - Tradicionales y steal frame.
+              <br /> ▪ Red de incendio y Sistema de detección.
+            </p>
           </Section>
-          <Section title=" MANTENIMIENTO INDUSTRIAL" variant="Mantenimiento">
-            Mantenimiento eléctrico y mecánico in-situ, o en taller. <br />
-            Automatización. Mantenimiento Edilicio. <br />
-            Redes de incendio y sistema de detección. <br />
-            Servicio integral mecánico para minería y empresas constructoras.
+          <Section title=" Mantenimiento Industrial" variant="Mantenimiento">
+            <p className="text-lg">
+              ▪ Mantenimiento edilicio. <br /> ▪ Mantenimiento eléctrico y
+              mecánico in situ o en taller. <br />▪ Mantenimiento en redes de
+              incendio y sistemas de detección.
+            </p>
           </Section>
         </div>
         <div id="Contact" className="flex flex-col h-[600px] w-full relative">
