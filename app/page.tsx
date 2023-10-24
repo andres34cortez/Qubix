@@ -193,12 +193,14 @@ export default function Home() {
       </div>
       {/* MOBILE */}
       <div className="flex flex-col lg:hidden w-full">
-        <Navbar />
-        <div className="flex flex-col min-h-[300px] pt-12 mb-16 px-6">
-          <h1 className="mb-4 text-3xl font-semibold text-[#008eaa] self-center drop-shadow-lg z-10">
+        <div className="fixed w-full z-10 bg-white">
+          <Navbar />
+        </div>
+        <div className="flex flex-col min-h-[300px] pt-12 mb-16 px-6 mt-10">
+          <h1 className="mb-4 text-3xl font-semibold text-[#008eaa] self-center drop-shadow-lg">
             QUIENES SOMOS?
           </h1>
-          <p className="text-black text-lg self-center text-center z-10">
+          <p className="text-black text-lg self-center text-center">
             QUBIX es una pyme que brinda soluciones integrales, abocada a la
             actividad de ingeniería, arquitectura y construcción
             multidisciplinaria, venta de productos e insumos asociados al rubro
