@@ -11,6 +11,8 @@ import { motion, AnimatePresence } from "framer-motion";
 
 import Contact from "./Components/Contact";
 import CarouselImg from "./Components/CarouselImg";
+import Image from "next/image";
+import Q from "./Assets/Q.svg";
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(false);
@@ -35,12 +37,9 @@ export default function Home() {
             <Navbar />
           </motion.div>
         )}
-        <div className="pt-14" id="Home" />
         <motion.div
-          className={`hidden lg:flex lg:flex-col lg:w-full lg:items-center lg:justify-center`}
-          style={{
-            height: `calc(100vh - 50px)`,
-          }}
+          id="Home"
+          className={`hidden lg:flex lg:flex-col lg:w-full lg:items-center lg:justify-center lg:min-h-screen lg:py-28`}
         >
           <motion.div
             className={`lg:absolute lg:top-0 lg:left-0 lg:right-0 lg:bottom-0 lg:w-full lg:items-center lg:justify-center bg-cover bg-no-repeat bg-center`}
@@ -196,7 +195,8 @@ export default function Home() {
         <div className="fixed w-full z-10 bg-white">
           <Navbar />
         </div>
-        <div className="flex flex-col min-h-[300px] pt-12 mb-16 px-6 mt-10">
+        <div className="flex flex-col min-h-[300px] pt-24 mb-16 px-6 mt-10">
+          <Image src={Q} alt="" className="mb-20 self-center w-36" />
           <h1 className="mb-4 text-3xl font-semibold text-[#008eaa] self-center drop-shadow-lg">
             QUIENES SOMOS?
           </h1>
