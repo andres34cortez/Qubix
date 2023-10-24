@@ -76,10 +76,10 @@ export default function Home() {
               </p>
             </div>
           </motion.div>
-          <div className={`absolute self-center animate-widen w-[355px] z-10`}>
+          <div className={`absolute self-center animate-widen w-[400px] z-10`}>
             <motion.div
               initial={{ opacity: 1, zIndex: 10 }}
-              animate={{ opacity: 0.2, zIndex: 10 }}
+              animate={{ opacity: 0.2, zIndex: 10, overflow: "hidden" }}
               transition={{ duration: 2, delay: 6 }}
             >
               <LottieAnimation animationData={animationData} />
@@ -212,36 +212,30 @@ export default function Home() {
             title=" Venta y alquiler de equipos e insumos"
             variant="Productos"
           >
-            <p className="text-lg">
-              ▪ Ventas de insumos industrial.
-              <br />
-              ▪ Ventas de insumos para la construcción.
-              <br />
-              ▪ Venta y alquiler de herramientas.
-              <br />▪ Alquiler de equipos para minería/construcción.
-            </p>
+            ▪ Ventas de insumos industrial.
+            <br />
+            ▪ Ventas de insumos para la construcción.
+            <br />
+            ▪ Venta y alquiler de herramientas.
+            <br />▪ Alquiler de equipos para minería/construcción.
           </Section>
           <Section
             title="Construcciones Civiles, Electromecánicas y Montaje."
             variant="Construccion"
           >
-            <p className="text-lg">
-              ▪ Arquitectura industrial e ingeniería para proyectos
-              <br />
-              ▪ Planificación, gestión y proyectos de obra mediante sistema BIM.
-              <br /> ▪ Construcciones: <br /> &nbsp; - Montaje y soldaduras
-              especiales <br /> &nbsp; - Metalúrgica <br />
-              &nbsp; - Pipping <br /> &nbsp; - Módulos para minería
-              <br /> &nbsp; - Tradicionales y steal frame.
-              <br /> ▪ Red de incendio y Sistema de detección.
-            </p>
+            ▪ Arquitectura industrial e ingeniería para proyectos
+            <br />
+            ▪ Planificación, gestión y proyectos de obra mediante sistema BIM.
+            <br /> ▪ Construcciones: <br /> &nbsp; - Montaje y soldaduras
+            especiales <br /> &nbsp; - Metalúrgica <br />
+            &nbsp; - Pipping <br /> &nbsp; - Módulos para minería
+            <br /> &nbsp; - Tradicionales y steal frame.
+            <br /> ▪ Red de incendio y Sistema de detección.
           </Section>
           <Section title=" Mantenimiento Industrial" variant="Mantenimiento">
-            <p className="text-lg">
-              ▪ Mantenimiento edilicio. <br /> ▪ Mantenimiento eléctrico y
-              mecánico in situ o en taller. <br />▪ Mantenimiento en redes de
-              incendio y sistemas de detección.
-            </p>
+            ▪ Mantenimiento edilicio. <br /> ▪ Mantenimiento eléctrico y
+            mecánico in situ o en taller. <br />▪ Mantenimiento en redes de
+            incendio y sistemas de detección.
           </Section>
         </div>
         <div id="Contactm" className="flex flex-col h-[600px] w-full relative">

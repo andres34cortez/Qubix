@@ -70,8 +70,8 @@ module.exports = {
           "100%": { transform: "translateX(-50%)" },
         },
         widen: {
-          "0%": { width: "355px", animationTimingFunction: "ease-out" },
-          "33%, 98%": { width: "355px", animationTimingFunction: "ease-in" },
+          "0%": { width: "400px", animationTimingFunction: "ease-out" },
+          "33%, 98%": { width: "400px", animationTimingFunction: "ease-in" },
           "40%, 87%": {
             width: "1000px",
             animationTimingFunction: "ease-in-out",

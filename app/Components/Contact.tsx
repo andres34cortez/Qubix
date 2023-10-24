@@ -43,8 +43,8 @@ export default function Contact() {
         </h1>
         <div className="flex flex-col justify-center lg:w-[600px] lg:mt-16 mt-12">
           <div className="flex lg:flex-row flex-col">
-            <div className="flex flex-col w-full text-xl font-semibold">
-              <h2>Nuestros Correos</h2>
+            <div className="flex flex-col w-full text-xl">
+              <h2 className="underline font-semibold">Nuestros Correos</h2>
               <div className="flex flex-row cursor-pointer items-center mt-6 lg:mt-0">
                 <Image src={correo} alt="" className="w-[28px] h-[28px]" />
                 <h3 className="pl-1 text-xl">Amolina@qubix.com.ar</h3>
@@ -54,18 +54,20 @@ export default function Contact() {
                 <h3 className="pl-1 text-xl">Info@qubix.com.ar</h3>
               </div>
             </div>
-            <div className="flex flex-col w-full text-xl font-semibold">
-              <h2>Nuestros teléfonos</h2>
+            <div className="flex flex-col w-full text-xl">
+              <h2 className="underline mt-12  font-semibold">
+                Nuestros teléfonos
+              </h2>
               <div className="flex flex-row cursor-pointer items-center mt-6 lg:mt-0">
                 <Image src={whatsapp} alt="" className="w-[28px] h-[28px]" />
                 <h3 className="pl-1 text-xl">+5492645855079</h3>
               </div>
             </div>
           </div>
-          <div className=" flex lg:flex-row  flex-col justify-between lg:items-center w-full pt-16">
+          <div className=" flex flex-row justify-between lg:items-center w-full pt-12">
             <div className="flex flex-row cursor-pointer items-center mt-6 lg:mt-0">
               <Image src={instagram} alt="" className="w-[28px] h-[28px]" />
-              <h3 className="pl-1 text-xl">Instagram</h3>
+              <h3 className="pl-1 text-xl hidden lg:flex">Instagram</h3>
             </div>
             <div className="flex flex-row cursor-pointer items-center mt-6 lg:mt-0">
               <Image
@@ -73,7 +75,7 @@ export default function Contact() {
                 alt=""
                 className="w-[28px] h-[28px] cursor-pointer"
               />
-              <h3 className="pl-1 text-xl">LinkdIn</h3>
+              <h3 className="pl-1 text-xl hidden lg:flex">LinkdIn</h3>
             </div>
             <div className="flex flex-row cursor-pointer items-center mt-6 lg:mt-0">
               <Image
@@ -81,7 +83,7 @@ export default function Contact() {
                 alt=""
                 className="w-[24px] h-[28px] cursor-pointer"
               />
-              <h3 className="pl-1 text-xl">Dirección</h3>
+              <h3 className="pl-1 text-xl  hidden lg:flex">Dirección</h3>
             </div>
           </div>
         </div>
