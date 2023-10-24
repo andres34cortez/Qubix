@@ -44,7 +44,9 @@ export default function Contact() {
         <div className="flex flex-col justify-center lg:w-[600px] lg:mt-16 mt-12">
           <div className="flex lg:flex-row flex-col">
             <div className="flex flex-col w-full text-xl">
-              <h2 className="underline font-semibold">Nuestros Correos</h2>
+              <h2 className="underline font-semibold lg:mt-12 lg:pb-2">
+                Nuestros Correos
+              </h2>
               <div className="flex flex-row cursor-pointer items-center mt-6 lg:mt-0">
                 <Image src={correo} alt="" className="w-[28px] h-[28px]" />
                 <h3 className="pl-1 text-xl">Amolina@qubix.com.ar</h3>
@@ -55,7 +57,7 @@ export default function Contact() {
               </div>
             </div>
             <div className="flex flex-col w-full text-xl">
-              <h2 className="underline mt-12  font-semibold">
+              <h2 className="underline mt-12 font-semibold lg:pb-2">
                 Nuestros teléfonos
               </h2>
               <div className="flex flex-row cursor-pointer items-center mt-6 lg:mt-0">
@@ -64,7 +66,7 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <div className=" flex flex-row justify-between lg:items-center w-full pt-12">
+          <div className=" flex flex-row justify-between lg:items-center w-full pt-12 lg:pt-32">
             <div className="flex flex-row cursor-pointer items-center mt-6 lg:mt-0">
               <Image src={instagram} alt="" className="w-[28px] h-[28px]" />
               <h3 className="pl-1 text-xl hidden lg:flex">Instagram</h3>

@@ -13,6 +13,14 @@ import Contact from "./Components/Contact";
 import CarouselImg from "./Components/CarouselImg";
 import Image from "next/image";
 import Q from "./Assets/Q.svg";
+import Arcor from "./Assets/Clients/Arcor_logo.svg.png";
+import YPF from "./Assets/Clients/ypfluz.png";
+import Cat from "./Assets/Clients/finning.png";
+import SaintG from "./Assets/Clients/saintG.png";
+import Distrocuyo from "./Assets/Clients/distrocuyo.jpg";
+import Mseguridad from "./Assets/Clients/maxiseguridad.png";
+import JoseMaria from "./Assets/Clients/joseMaria.png";
+import PedidosYa from "./Assets/Clients/pedidosYa.jpg";
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(false);
@@ -237,6 +245,18 @@ export default function Home() {
             mecánico in situ o en taller. <br />▪ Mantenimiento en redes de
             incendio y sistemas de detección.
           </Section>
+        </div>
+        <div className="flex flex-col py-8 gap-6 items-center justify-center px-8">
+          <div className="flex flex-row gap-4 justify-center">
+            <Image src={Arcor} alt="" className="w-[40%] h-14" />
+            <Image src={YPF} alt="" className="w-[40%] h-14" />
+          </div>
+          <Image src={SaintG} alt="" className="w-[60%] h-14" />
+          <Image src={Cat} alt="" className="w-[80%] h-[50px]" />
+          <Image src={Distrocuyo} alt="" className="w-[70%]" />
+          <Image src={JoseMaria} alt="" className="w-[70%]" />
+          <Image src={Mseguridad} alt="" className="w-[70%]" />
+          <Image src={PedidosYa} alt="" className="w-[40%] h-[50px]" />
         </div>
         <div id="Contactm" className="flex flex-col h-[600px] w-full relative">
           <Contact />
