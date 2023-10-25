@@ -249,7 +249,7 @@ export default function Home() {
         <div className="flex flex-col py-8 gap-6 items-center justify-center px-8">
           <h1 className="font-semibold underline text-lg">Nuestros Clientes!</h1>
           <div className="flex flex-row gap-4 justify-center pt-1">
-            <Image src={Arcor} alt="" className="w-[50%] h-14" />
+            <Image src={Arcor} alt="" className="w-[90px] h-14" />
             <Image src={YPF} alt="" className="w-[40%] h-14" />
           </div>
           <Image src={SaintG} alt="" className="w-[60%] h-14 pt-1" />
