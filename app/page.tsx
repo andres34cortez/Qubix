@@ -246,18 +246,18 @@ export default function Home() {
             incendio y sistemas de detección.
           </Section>
         </div>
-        <div className="flex flex-col py-8 gap-6 items-center justify-center px-8">
+        <div className="flex flex-col py-8 gap-8 items-center justify-center px-8">
           <h1 className="font-semibold underline text-lg">Nuestros Clientes!</h1>
           <div className="flex flex-row gap-4 justify-center pt-1">
             <Image src={Arcor} alt="" className="w-[90px] h-14" />
             <Image src={YPF} alt="" className="w-[40%] h-14" />
           </div>
-          <Image src={SaintG} alt="" className="w-[60%] h-14 pt-1" />
-          <Image src={Cat} alt="" className="w-[80%] h-[50px] pt-1" />
-          <Image src={Distrocuyo} alt="" className="w-[70%] pt-1" />
-          <Image src={JoseMaria} alt="" className="w-[70%] pt-1" />
-          <Image src={Mseguridad} alt="" className="w-[70%] pt-1" />
-          <Image src={PedidosYa} alt="" className="w-[40%] h-[50px] pt-1" />
+          <Image src={SaintG} alt="" className="w-[60%] h-14 " />
+          <Image src={Cat} alt="" className="w-[80%] h-[50px] " />
+          <Image src={Distrocuyo} alt="" className="w-[70%] " />
+          <Image src={JoseMaria} alt="" className="w-[70%] " />
+          <Image src={Mseguridad} alt="" className="w-[70%] " />
+          <Image src={PedidosYa} alt="" className="w-[40%] h-[50px] pt-1 mb-20" />
         </div>
         <div id="Contactm" className="flex flex-col h-[600px] w-full relative">
           <Contact />
