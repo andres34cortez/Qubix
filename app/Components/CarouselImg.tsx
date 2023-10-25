@@ -3,24 +3,24 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
 import fondo from "../Assets/editadas/principal.jpg";
-
+import sinteplast from "../Assets/editadas/Sinteplast.jpg"
 export default function CarouselImg() {
   const slideItems = [
     {
       id: 1,
       imageSrc: fondo,
       title:
-        "PROYECTO YPF ESTO ES UN TEXTO DE PRUEBA - PROYECTO YPF ESTO ES UN TEXTO DE PRUEBA",
+        "Proyecto YPF luz -Zonda 1 /n/ Revestimiento - aleros metálicos  /n       Tocota - San Juan ",
     },
     {
       id: 2,
-      imageSrc: fondo,
-      title: "Título de la Slide 2",
+      imageSrc: sinteplast,
+      title: "Proyecto Sinteplaste       Red de incendio       Parque industrial- san luis",
     },
     {
       id: 3,
       imageSrc: fondo,
-      title: "Título de la Slide 3",
+      title: "Alquiler de equipos       Limpieza de terrenos       Rawson - San Juan",
     },
   ];
 

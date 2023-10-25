@@ -113,7 +113,7 @@ export default function Contact() {
                   alt=''
                   className='w-[28px] h-[28px] cursor-pointer'
                 />
-                <h3 className='pl-1 text-xl hidden lg:flex'>LinkdIn</h3>{" "}
+                <h3 className='pl-1 text-xl hidden lg:flex'>LinkedIn</h3>{" "}
               </a>
             </div>
             <div className='flex flex-row cursor-pointer items-center mt-6 lg:mt-0'>
