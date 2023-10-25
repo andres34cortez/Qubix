@@ -3,24 +3,30 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
 import fondo from "../Assets/editadas/principal.jpg";
-import sinteplast from "../Assets/editadas/Sinteplast.jpg"
+import sinteplast from "../Assets/editadas/Sinteplast.jpg";
+import maquina1 from "@/app/Assets/editadas/Maquina1.jpg";
 export default function CarouselImg() {
   const slideItems = [
     {
       id: 1,
       imageSrc: fondo,
-      title:
-        "Proyecto YPF luz -Zonda 1 /n/ Revestimiento - aleros metálicos  /n       Tocota - San Juan ",
+      title: "Proyecto YPF LUZ - Zonda 1 ",
+      title1: "Revestimiento - aleros metálicos",
+      title2: "Tocota - San Juan",
     },
     {
       id: 2,
       imageSrc: sinteplast,
-      title: "Proyecto Sinteplaste       Red de incendio       Parque industrial- san luis",
+      title: "Proyecto Sinteplaste              ",
+      title1: "Red de incendio",
+      title2: "Parque industrial - San Luis",
     },
     {
       id: 3,
-      imageSrc: fondo,
-      title: "Alquiler de equipos       Limpieza de terrenos       Rawson - San Juan",
+      imageSrc: maquina1,
+      title: "Alquiler de equipos      ",
+      title1: "  Limpieza de terrenos",
+      title2: "Rawson - San Juan",
     },
   ];
 
@@ -35,7 +41,7 @@ export default function CarouselImg() {
     >
       {slideItems.map((item) => (
         <div key={item.id} style={{ maxHeight: "800px" }}>
-          <div style={{ position: "relative" }}>
+          <div className="">
             <Image src={item.imageSrc} alt={`Slide ${item.id}`} />
             <div
               style={{
@@ -50,7 +56,9 @@ export default function CarouselImg() {
                 fontWeight: "500",
               }}
             >
-              {item.title}
+              {item.title} <br />
+              {item.title1} <br />
+              {item.title2}
             </div>
           </div>
         </div>
