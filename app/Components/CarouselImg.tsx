@@ -25,7 +25,14 @@ export default function CarouselImg() {
   ];
 
   return (
-    <Carousel showStatus={false} showThumbs={false}>
+    <Carousel
+      showStatus={false}
+      showThumbs={false}
+      autoPlay={true}
+      interval={5000}
+      infiniteLoop={true}
+      transitionTime={2000}
+    >
       {slideItems.map((item) => (
         <div key={item.id} style={{ maxHeight: "800px" }}>
           <div style={{ position: "relative" }}>
