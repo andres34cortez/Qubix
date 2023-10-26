@@ -145,47 +145,47 @@ export default function Home() {
                 <div
                   id="Services"
                   className=" flex flex-col items-center w-full"
+                />
+                <Section
+                  title=" Venta y alquiler de equipos e insumos"
+                  variant="Productos"
                 >
-                  <Section
-                    title=" Venta y alquiler de equipos e insumos"
-                    variant="Productos"
-                  >
-                    <p className="text-2xl">
-                      ▪ Ventas de insumos industrial.
-                      <br />
-                      ▪ Ventas de insumos para la construcción.
-                      <br />
-                      ▪ Venta y alquiler de herramientas.
-                      <br />▪ Alquiler de equipos para minería/construcción.
-                    </p>
-                  </Section>
-                  <Section
-                    title="Construcciones Civiles, Electromecánicas y Montaje."
-                    variant="Construccion"
-                  >
-                    <p className="text-2xl">
-                      ▪ Arquitectura industrial e ingeniería para proyectos
-                      <br />
-                      ▪ Planificación, gestión y proyectos de obra mediante
-                      sistema BIM.
-                      <br /> ▪ Construcciones: <br /> &nbsp; - Montaje y
-                      soldaduras especiales <br /> &nbsp; - Metalúrgica <br />
-                      &nbsp; - Pipping <br /> &nbsp; - Módulos para minería
-                      <br /> &nbsp; - Tradicionales y steal frame.
-                      <br /> ▪ Red de incendio y Sistema de detección.
-                    </p>
-                  </Section>
-                  <Section
-                    title=" Mantenimiento Industrial"
-                    variant="Mantenimiento"
-                  >
-                    <p className="text-2xl">
-                      ▪ Mantenimiento edilicio. <br /> ▪ Mantenimiento eléctrico
-                      y mecánico in situ o en taller. <br />▪ Mantenimiento en
-                      redes de incendio y sistemas de detección.
-                    </p>
-                  </Section>
-                </div>
+                  <p className="text-2xl">
+                    ▪ Ventas de insumos industrial.
+                    <br />
+                    ▪ Ventas de insumos para la construcción.
+                    <br />
+                    ▪ Venta y alquiler de herramientas.
+                    <br />▪ Alquiler de equipos para minería/construcción.
+                  </p>
+                </Section>
+                <Section
+                  title="Construcciones Civiles, Electromecánicas y Montaje."
+                  variant="Construccion"
+                >
+                  <p className="text-2xl">
+                    ▪ Arquitectura industrial e ingeniería para proyectos
+                    <br />
+                    ▪ Planificación, gestión y proyectos de obra mediante
+                    sistema BIM.
+                    <br /> ▪ Construcciones: <br /> &nbsp; - Montaje y
+                    soldaduras especiales <br /> &nbsp; - Metalúrgica <br />
+                    &nbsp; - Pipping <br /> &nbsp; - Módulos para minería
+                    <br /> &nbsp; - Tradicionales y steal frame.
+                    <br /> ▪ Red de incendio y Sistema de detección.
+                  </p>
+                </Section>
+                <Section
+                  title=" Mantenimiento Industrial"
+                  variant="Mantenimiento"
+                >
+                  <p className="text-2xl">
+                    ▪ Mantenimiento edilicio. <br /> ▪ Mantenimiento eléctrico y
+                    mecánico in situ o en taller. <br />▪ Mantenimiento en redes
+                    de incendio y sistemas de detección.
+                  </p>
+                </Section>
+
                 <Marquee />
                 <div
                   id="Contact"
@@ -247,7 +247,9 @@ export default function Home() {
           </Section>
         </div>
         <div className="flex flex-col py-8 gap-8 items-center justify-center px-8">
-          <h1 className="font-semibold underline text-lg">Nuestros Clientes!</h1>
+          <h1 className="font-semibold underline text-lg">
+            Nuestros Clientes!
+          </h1>
           <div className="flex flex-row gap-4 justify-center pt-1">
             <Image src={Arcor} alt="" className="w-[90px] h-14" />
             <Image src={YPF} alt="" className="w-[40%] h-14" />
@@ -257,7 +259,11 @@ export default function Home() {
           <Image src={Distrocuyo} alt="" className="w-[70%] " />
           <Image src={JoseMaria} alt="" className="w-[70%] " />
           <Image src={Mseguridad} alt="" className="w-[70%] " />
-          <Image src={PedidosYa} alt="" className="w-[40%] h-[50px] pt-1 mb-20" />
+          <Image
+            src={PedidosYa}
+            alt=""
+            className="w-[40%] h-[50px] pt-1 mb-20"
+          />
         </div>
         <div id="Contactm" className="flex flex-col h-[600px] w-full relative">
           <Contact />

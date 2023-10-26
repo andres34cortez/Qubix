@@ -11,8 +11,8 @@ import Gris from "../Assets/gris.svg";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import contru1 from "@/app/Assets/editadas/Construcciones0.jpg";
-import contru2 from "@/app/Assets/editadas/Construcciones1.jpg";
-import contru3 from "@/app/Assets/editadas/Construcciones2.jpg";
+import contru2 from "@/app/Assets/editadas/red_incendio.jpg";
+import contru3 from "@/app/Assets/editadas/sistema_deteccion.jpg";
 import maquina1 from "@/app/Assets/editadas/Maquina1.jpg";
 import maquina2 from "@/app/Assets/editadas/Maquina2.jpg";
 import maquina3 from "@/app/Assets/editadas/Maquina4.jpg";
@@ -83,9 +83,9 @@ const Section = (props: Props) => {
             </div>
             <div className="lg:w-1/2 pt-10">
               <Carousel
-                showArrows={true}
-                showThumbs={false}
                 showIndicators={false}
+                showThumbs={false}
+                showArrows={true}
                 autoPlay={true}
                 interval={3000}
                 infiniteLoop={true}
@@ -93,72 +93,66 @@ const Section = (props: Props) => {
                 className="max-w-[300px] md:max-w-full"
               >
                 <div>
-                  <div>
-                    <Image
-                      src={
-                        props.variant === "Construccion"
-                          ? contru1
-                          : props.variant === "Mantenimiento"
-                          ? mante1
-                          : maquina2
-                      }
-                      alt="Imagen 1"
-                      className="rounded-md"
-                    />
-                    {props.variant === "Construccion" ? (
-                      <p>Oficinas/ habitación/ baños</p>
-                    ) : props.variant === "Mantenimiento" ? (
-                      <p>mantenimiento</p>
-                    ) : (
-                      <p className="">Mini cargadora lonking</p>
-                    )}
-                  </div>
+                  <Image
+                    src={
+                      props.variant === "Construccion"
+                        ? contru1
+                        : props.variant === "Mantenimiento"
+                        ? mante1
+                        : maquina2
+                    }
+                    alt="Imagen 1"
+                    className="rounded-md bg-cover"
+                  />
+                  {props.variant === "Construccion" ? (
+                    <p>Oficinas/ habitación/ baños</p>
+                  ) : props.variant === "Mantenimiento" ? (
+                    <p>Mantenimiento y montaje red electrica</p>
+                  ) : (
+                    <p className="">Mini cargadora lonking</p>
+                  )}
                 </div>
                 <div>
-                  <div>
-                    <Image
-                      src={
-                        props.variant === "Construccion"
-                          ? contru2
-                          : props.variant === "Mantenimiento"
-                          ? mante2
-                          : maquina2
-                      }
-                      alt="Imagen 2"
-                      className="rounded-md"
-                    />
-                    {props.variant === "Construccion" ? (
-                      <p>Red de incendio</p>
-                    ) : props.variant === "Mantenimiento" ? (
-                      <p>mantenimiento</p>
-                    ) : (
-                      <p className="">
-                        Productos especiales para la construcción{" "}
-                      </p>
-                    )}
-                  </div>
+                  <Image
+                    src={
+                      props.variant === "Construccion"
+                        ? contru2
+                        : props.variant === "Mantenimiento"
+                        ? mante2
+                        : maquina2
+                    }
+                    alt="Imagen 2"
+                    className="rounded-md"
+                  />
+                  {props.variant === "Construccion" ? (
+                    <p>Red de incendio</p>
+                  ) : props.variant === "Mantenimiento" ? (
+                    <p>mantenimiento</p>
+                  ) : (
+                    <p className="">
+                      Productos especiales para la construcción
+                    </p>
+                  )}
                 </div>
                 <div>
-                  <div>
-                    <Image
-                      src={
-                        props.variant === "Construccion"
-                          ? contru3
-                          : props.variant === "Mantenimiento"
-                          ? mante3
-                          : maquina3
-                      }
-                      alt="Imagen 3"
-                      className="rounded-md"
-                    />
-                    {props.variant === "Construccion" ? (
-                      <p>Sistema de detección</p>
-                    ) : props.variant === "Mantenimiento" ? (
-                      <p>mantenimiento</p>
-                    ) : (
-                      <p className="">Plataforma elevadoras</p>
-                    )}
-                  </div>
+                  <Image
+                    src={
+                      props.variant === "Construccion"
+                        ? contru3
+                        : props.variant === "Mantenimiento"
+                        ? mante3
+                        : maquina3
+                    }
+                    alt="Imagen 3"
+                    className="rounded-md"
+                  />
+                  {props.variant === "Construccion" ? (
+                    <p>Sistema de detección</p>
+                  ) : props.variant === "Mantenimiento" ? (
+                    <p>mantenimiento</p>
+                  ) : (
+                    <p className="">Plataforma elevadoras</p>
+                  )}
                 </div>
               </Carousel>
             </div>
