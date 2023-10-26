@@ -9,7 +9,6 @@ import ubicacion from "../Assets/ubicacion.svg";
 import correo from "../Assets/correo.png";
 import whatsapp from "../Assets/whatsapp.png";
 
-
 export default function Contact() {
   return (
     <div>
@@ -68,7 +67,7 @@ export default function Contact() {
                 >
                   <Image src={correo} alt='' className='w-[28px] h-[28px]' />
 
-                  <h3 className='pl-1 text-xl'>Info@qubix .com.ar</h3>
+                  <h3 className='pl-1 text-xl'>Info@qubix.com.ar</h3>
                 </a>
               </div>
             </div>
