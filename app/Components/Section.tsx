@@ -1,9 +1,6 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import mantenimiento from "../Assets/mantenimiento1.png";
-import productos from "../Assets/mantenimiento3.png";
-import contruc from "../Assets/contruc.png";
 import { cn } from "@/lib/utils";
 import Azul from "../Assets/azul.svg";
 import Naranja from "../Assets/naranja.svg";
