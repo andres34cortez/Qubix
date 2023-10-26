@@ -28,9 +28,9 @@ interface Props {
 
 const Section = (props: Props) => {
   return (
-    <div className='flex relative w-full pb-24 pt-32 bg-gray-100 z-[-2] lg:pb-0 lg:pt-0 lg:h-screen lg:items-center lg:justify-center'>
-      <div className='lg:max-w-[1400px] w-full'>
-        <div className='container flex flex-row'>
+    <div className="flex relative w-full pb-24 pt-32 bg-gray-100 z-[-2] lg:pb-0 lg:pt-0 lg:h-screen lg:items-center lg:justify-center">
+      <div className="lg:max-w-[1400px] w-full">
+        <div className="container flex flex-row">
           <Image
             src={
               props.variant === "Construccion"
@@ -39,7 +39,7 @@ const Section = (props: Props) => {
                 ? Gris
                 : Azul
             }
-            alt=''
+            alt=""
             className={cn(
               "lg:w-[700px] w-[300px] absolute top-0 z-[-1]",
               props.variant === "Construccion" &&
@@ -55,7 +55,7 @@ const Section = (props: Props) => {
               props.variant === "Construccion" && "lg:flex-row"
             )}
           >
-            <div className='lg:w-1/2 h-full w-full flex flex-col lg:justify-center lg:pr-16'>
+            <div className="lg:w-1/2 h-full w-full flex flex-col lg:justify-center lg:pr-16">
               <h2
                 className={`lg:text-3xl text-2xl font-semibold mb-4 ${
                   props.variant === "Construccion" ? "lg:pl-16 lg:pt-0" : ""
@@ -81,14 +81,16 @@ const Section = (props: Props) => {
                 {props.children}
               </p>
             </div>
-            <div className='lg:w-1/2 pt-10'>
+            <div className="lg:w-1/2 pt-10">
               <Carousel
                 showArrows={true}
                 showThumbs={false}
-                showIndicators={false} 
+                showIndicators={false}
                 autoPlay={true}
                 interval={3000}
                 infiniteLoop={true}
+                // tamanio de mobile 300px
+                className="max-w-[300px] md:max-w-full"
               >
                 <div>
                   <div>
@@ -100,15 +102,15 @@ const Section = (props: Props) => {
                           ? mante1
                           : maquina2
                       }
-                      alt='Imagen 1'
-                      className='rounded-md'
+                      alt="Imagen 1"
+                      className="rounded-md"
                     />
                     {props.variant === "Construccion" ? (
                       <p>Oficinas/ habitación/ baños</p>
                     ) : props.variant === "Mantenimiento" ? (
                       <p>mantenimiento</p>
                     ) : (
-                      <p className=''>Mini cargadora lonking</p>
+                      <p className="">Mini cargadora lonking</p>
                     )}
                   </div>
                 </div>
@@ -122,15 +124,17 @@ const Section = (props: Props) => {
                           ? mante2
                           : maquina2
                       }
-                      alt='Imagen 2'
-                      className='rounded-md'
+                      alt="Imagen 2"
+                      className="rounded-md"
                     />
                     {props.variant === "Construccion" ? (
                       <p>Red de incendio</p>
                     ) : props.variant === "Mantenimiento" ? (
                       <p>mantenimiento</p>
                     ) : (
-                      <p className=''>Productos especiales para la construcción </p>
+                      <p className="">
+                        Productos especiales para la construcción{" "}
+                      </p>
                     )}
                   </div>
                 </div>
@@ -144,15 +148,15 @@ const Section = (props: Props) => {
                           ? mante3
                           : maquina3
                       }
-                      alt='Imagen 3'
-                      className='rounded-md'
+                      alt="Imagen 3"
+                      className="rounded-md"
                     />
                     {props.variant === "Construccion" ? (
                       <p>Sistema de detección</p>
                     ) : props.variant === "Mantenimiento" ? (
                       <p>mantenimiento</p>
                     ) : (
-                      <p className=''>Plataforma elevadoras</p>
+                      <p className="">Plataforma elevadoras</p>
                     )}
                   </div>
                 </div>
