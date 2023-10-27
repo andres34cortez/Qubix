@@ -49,7 +49,7 @@ export default function Contact() {
               </h2>
               <div className='flex flex-row cursor-pointer items-center mt-6 lg:mt-0'>
                 <a
-                  href='Amolina@qubix.com.ar'
+                  href='mailto:Amolina@qubix.com.ar'
                   target='_blank'
                   rel='noopener noreferrer'
                   className='flex flex-row'
