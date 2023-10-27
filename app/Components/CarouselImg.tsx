@@ -3,7 +3,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
 import fondo from "../Assets/editadas/principal.jpg";
-import sinteplast from "@/app/Assets/editadas/Sinteplast.JPG";
+import sinteplast from "@/app/Assets/editadas/Sinteplast.jpg";
 import maquina1 from "@/app/Assets/editadas/hero3.jpg";
 export default function CarouselImg() {
   const slideItems = [
