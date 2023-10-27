@@ -8,9 +8,6 @@ import Gris from "../Assets/gris.svg";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import contru1 from "@/app/Assets/editadas/Construcciones0.jpg";
-import contru2 from "@/app/Assets/editadas/red_incendio.jpg";
-import contru3 from "@/app/Assets/editadas/sistema_deteccion.jpg";
-import maquina1 from "@/app/Assets/editadas/Maquina1.jpg";
 import maquina2 from "@/app/Assets/editadas/Maquina2.jpg";
 import maquina3 from "@/app/Assets/editadas/Maquina4.jpg";
 import mante1 from "@/app/Assets/editadas/mantenimiento1.jpg";
@@ -113,7 +110,7 @@ const Section = (props: Props) => {
                   <Image
                     src={
                       props.variant === "Construccion"
-                        ? contru2
+                        ? ""
                         : props.variant === "Mantenimiento"
                         ? mante2
                         : maquina2
@@ -135,7 +132,7 @@ const Section = (props: Props) => {
                   <Image
                     src={
                       props.variant === "Construccion"
-                        ? contru3
+                        ? ""
                         : props.variant === "Mantenimiento"
                         ? mante3
                         : maquina3

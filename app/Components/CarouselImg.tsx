@@ -3,8 +3,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
 import fondo from "../Assets/editadas/principal.jpg";
-import sinteplast from "@/app/Assets/editadas/Sinteplast.jpg";
-import maquina1 from "@/app/Assets/editadas/hero3.jpg";
+
 export default function CarouselImg() {
   const slideItems = [
     {
@@ -16,14 +15,14 @@ export default function CarouselImg() {
     },
     {
       id: 2,
-      imageSrc: sinteplast,
+      imageSrc: "",
       title: "Proyecto Sinteplaste              ",
       title1: "Red de incendio",
       title2: "Parque industrial - San Luis",
     },
     {
       id: 3,
-      imageSrc: maquina1,
+      imageSrc: "",
       title: "Alquiler de equipos      ",
       title1: "  Limpieza de terrenos",
       title2: "Rawson - San Juan",
@@ -41,7 +40,7 @@ export default function CarouselImg() {
     >
       {slideItems.map((item) => (
         <div key={item.id} style={{ maxHeight: "800px" }}>
-          <div className=''>
+          <div className="">
             <Image src={item.imageSrc} alt={`Slide ${item.id}`} />
             <div
               style={{
