@@ -3,6 +3,8 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
 import fondo from "../Assets/editadas/principal.jpg";
+import fondo2 from "../Assets/editadas/proyecto_sinteplaste.jpg";
+import fondo3 from "../Assets/editadas/hero3.jpg";
 
 export default function CarouselImg() {
   const slideItems = [
@@ -15,14 +17,14 @@ export default function CarouselImg() {
     },
     {
       id: 2,
-      imageSrc: "",
+      imageSrc: fondo2,
       title: "Proyecto Sinteplaste              ",
       title1: "Red de incendio",
       title2: "Parque industrial - San Luis",
     },
     {
       id: 3,
-      imageSrc: "",
+      imageSrc: fondo3,
       title: "Alquiler de equipos      ",
       title1: "  Limpieza de terrenos",
       title2: "Rawson - San Juan",

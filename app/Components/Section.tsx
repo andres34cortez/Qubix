@@ -7,7 +7,9 @@ import Naranja from "../Assets/naranja.svg";
 import Gris from "../Assets/gris.svg";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import contru1 from "@/app/Assets/editadas/Construcciones0.jpg";
+import constru1 from "@/app/Assets/editadas/Construcciones0.jpg";
+import constru2 from "../Assets/editadas/red_incendio.jpg";
+import constru3 from "../Assets/editadas/sistema_deteccion.jpg";
 import maquina2 from "@/app/Assets/editadas/Maquina2.jpg";
 import maquina3 from "@/app/Assets/editadas/Maquina4.jpg";
 import mante1 from "@/app/Assets/editadas/mantenimiento1.jpg";
@@ -90,7 +92,7 @@ const Section = (props: Props) => {
                   <Image
                     src={
                       props.variant === "Construccion"
-                        ? contru1
+                        ? constru1
                         : props.variant === "Mantenimiento"
                         ? mante1
                         : maquina2
@@ -110,7 +112,7 @@ const Section = (props: Props) => {
                   <Image
                     src={
                       props.variant === "Construccion"
-                        ? ""
+                        ? constru2
                         : props.variant === "Mantenimiento"
                         ? mante2
                         : maquina2
@@ -132,7 +134,7 @@ const Section = (props: Props) => {
                   <Image
                     src={
                       props.variant === "Construccion"
-                        ? ""
+                        ? constru3
                         : props.variant === "Mantenimiento"
                         ? mante3
                         : maquina3
