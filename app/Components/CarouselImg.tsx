@@ -42,19 +42,19 @@ export default function CarouselImg() {
     >
       {slideItems.map((item) => (
         <div key={item.id} style={{ maxHeight: "800px" }}>
-          <div className="">
+          <div className=''>
             <Image src={item.imageSrc} alt={`Slide ${item.id}`} />
             <div
               style={{
                 position: "absolute",
                 top: "50px", // Ajusta la posición vertical
                 left: "40px", // Ajusta la posición horizontal
-                width: "600px",
                 background: "rgba(0, 0, 0, 0.5)", // Fondo semitransparente
                 color: "white", // Color del texto
                 padding: "12px", // Espaciado alrededor del título
                 fontSize: "24px",
                 fontWeight: "500",
+                textAlign: "left",
               }}
             >
               {item.title} <br />

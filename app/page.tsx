@@ -21,6 +21,7 @@ import Distrocuyo from "./Assets/Clients/distrocuyo.jpg";
 import Mseguridad from "./Assets/Clients/maxiseguridad.png";
 import JoseMaria from "./Assets/Clients/joseMaria.png";
 import PedidosYa from "./Assets/Clients/pedidosYa.jpg";
+import Senasa from "./Assets/Clients/Senasa.png"
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(false);
@@ -259,6 +260,7 @@ export default function Home() {
           <Image src={Distrocuyo} alt="" className="w-[70%] " />
           <Image src={JoseMaria} alt="" className="w-[70%] " />
           <Image src={Mseguridad} alt="" className="w-[70%] " />
+          <Image src={Senasa} alt="" className="w-[70%] " />
           <Image
             src={PedidosYa}
             alt=""

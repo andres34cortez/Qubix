@@ -9,6 +9,7 @@ import Distrocuyo from "../Assets/Clients/distrocuyo.jpg";
 import Mseguridad from "../Assets/Clients/maxiseguridad.png";
 import PedidosYa from "../Assets/Clients/pedidosYa.jpg";
 import JoseMaria from "../Assets/Clients/joseMaria.png";
+import Senasa from "@/app/Assets/Clients/Senasa.png"
 /* la lista de los clientes:
 Finning Caterpillar 
 Saint Gobain
@@ -30,6 +31,7 @@ const Marquee: React.FC = () => {
         <Image className="h-[72px]" src={Mseguridad} alt="" />
         <Image className="h-[72px]" src={PedidosYa} alt="" />
         <Image className="h-[72px]" src={JoseMaria} alt="" />
+        <Image className="h-[72px]" src={Senasa} alt="" />
         {/* repeat */}
         <Image className="h-20" src={arcor} alt="" />
         <Image className="h-[72px]" src={Cat} alt="" />
@@ -39,6 +41,7 @@ const Marquee: React.FC = () => {
         <Image className="h-[72px]" src={Mseguridad} alt="" />
         <Image className="h-[72px]" src={PedidosYa} alt="" />
         <Image className="h-[72px]" src={JoseMaria} alt="" />
+        <Image className="h-[72px]" src={Senasa} alt="" />
         <Image className="h-20" src={arcor} alt="" />
         <Image className="h-[72px]" src={Cat} alt="" />
         <Image className="h-20" src={SaintG} alt="" />
@@ -47,6 +50,7 @@ const Marquee: React.FC = () => {
         <Image className="h-[72px]" src={Mseguridad} alt="" />
         <Image className="h-[72px]" src={PedidosYa} alt="" />
         <Image className="h-[72px]" src={JoseMaria} alt="" />
+        <Image className="h-[72px]" src={Senasa} alt="" />
         <Image className="h-20" src={arcor} alt="" />
         <Image className="h-[72px]" src={Cat} alt="" />
         <Image className="h-20" src={SaintG} alt="" />
@@ -55,6 +59,7 @@ const Marquee: React.FC = () => {
         <Image className="h-[72px]" src={Mseguridad} alt="" />
         <Image className="h-[72px]" src={PedidosYa} alt="" />
         <Image className="h-[72px]" src={JoseMaria} alt="" />
+        <Image className="h-[72px]" src={Senasa} alt="" />
         <Image className="h-20" src={arcor} alt="" />
         <Image className="h-[72px]" src={Cat} alt="" />
         <Image className="h-20" src={SaintG} alt="" />
@@ -63,6 +68,7 @@ const Marquee: React.FC = () => {
         <Image className="h-[72px]" src={Mseguridad} alt="" />
         <Image className="h-[72px]" src={PedidosYa} alt="" />
         <Image className="h-[72px]" src={JoseMaria} alt="" />
+        <Image className="h-[72px]" src={Senasa} alt="" />
         <Image className="h-20" src={arcor} alt="" />
         <Image className="h-[72px]" src={Cat} alt="" />
         <Image className="h-20" src={SaintG} alt="" />
@@ -71,6 +77,7 @@ const Marquee: React.FC = () => {
         <Image className="h-[72px]" src={Mseguridad} alt="" />
         <Image className="h-[72px]" src={PedidosYa} alt="" />
         <Image className="h-[72px]" src={JoseMaria} alt="" />
+        <Image className="h-[72px]" src={Senasa} alt="" />
         <Image className="h-20" src={arcor} alt="" />
         <Image className="h-[72px]" src={Cat} alt="" />
         <Image className="h-20" src={SaintG} alt="" />
@@ -79,6 +86,7 @@ const Marquee: React.FC = () => {
         <Image className="h-[72px]" src={Mseguridad} alt="" />
         <Image className="h-[72px]" src={PedidosYa} alt="" />
         <Image className="h-[72px]" src={JoseMaria} alt="" />
+        <Image className="h-[72px]" src={Senasa} alt="" />
       </div>
     </div>
   );
